@@ -1,1 +1,5 @@
+@import './variables.module.scss';
 
+.root {
+  background-color: $secondary-color;
+}

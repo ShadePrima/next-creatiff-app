@@ -3,7 +3,7 @@ import styles from './page.module.scss'
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.root}>
       <h1>Hello</h1>
     </main>
   )
