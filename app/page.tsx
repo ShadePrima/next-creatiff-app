@@ -3,6 +3,7 @@ import styles from './page.module.scss'
 import Company from '@/components/company/Company'
 import InfoCardBlock from '@/components/infoCardBlock/InfoCardBlock'
 import Partners from '@/components/partners/Partners'
+import Services from '@/components/services/Services'
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <div className='container'>
         <InfoCardBlock />
         <Partners />
+        <Services />
       </div>
     </main>
   )
