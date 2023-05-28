@@ -11,16 +11,18 @@
   cursor: pointer;
 
   transition: min-height 0.3s ease;
+
+  //   @media (max-width: 425px) {
+  //     min-height: 120px;
+  //   }
 }
 
 .root:active {
   min-height: 104px;
-}
 
-@media (max-width: 425px) {
-  .root:active {
-    min-height: 216px;
-  }
+  //   @media (max-width: 425px) {
+  //     min-height: 218px;
+  //   }
 }
 
 .topContent {
