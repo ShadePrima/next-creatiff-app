@@ -20,7 +20,7 @@ export default function Header() {
               width={104}
               height={104}
             />
-            <h1 className={`${styles.logoText} ${segoeScript}`}>
+            <h1 className={`${styles.logoText} ${segoeScript.className}`}>
               Creatiff - realizamos ideas
             </h1>
           </div>
