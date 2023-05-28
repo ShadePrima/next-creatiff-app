@@ -1,0 +1,47 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  background: $background-header;
+  background-position: center bottom 80px; /* Adjust the position and offset as needed */
+  background-repeat: no-repeat;
+  background-size: 100% calc(100% - 80px);
+}
+
+.contentRow {
+  align-items: start !important;
+  gap: 104px;
+  min-height: 670px;
+}
+
+@media (max-width: 425px) {
+  .contentRow {
+    gap: 32px;
+  }
+}
+
+.contenText {
+  max-width: 608px;
+  min-height: 502px;
+
+  h1 {
+    margin-top: 41px;
+    @include title1;
+    color: $color-white;
+    text-transform: uppercase;
+  }
+
+  .text {
+    margin-top: 32px;
+    @include text4;
+    color: $font-color-white;
+  }
+}
+
+.button {
+  margin-top: 32px;
+}
+
+.numbers {
+  margin-top: 48px;
+  max-width: 441px;
+}

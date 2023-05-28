@@ -1,0 +1,93 @@
+$primary-color: #64ff00;
+$secondary-color: #454545;
+
+//background
+$background-header: linear-gradient(90deg, #4f6722 30.73%, #84a44a 100%);
+$background-offer: radial-gradient(
+  100% 374.61% at 0% 0%,
+  #3d3d3d 0%,
+  #0f0f0f 42.19%
+);
+$background-contact: #353e23;
+$background-footer: #282e1b;
+
+//colors
+$color-white: #fff;
+$color-orange: #ff9300;
+$color-black: #15132a;
+
+//fonts
+$font-inter: 'Inter', sans-serif;
+$font-color-dark: rgba(21, 19, 42, 0.75);
+$font-color-white: rgba(255, 255, 255, 0.75);
+
+//margin
+$margin-72: 72px;
+$margin-48: 48px;
+$margin-32: 32px;
+
+//border
+$border-black: 1px solid rgba(0, 0, 0, 0.13);
+$border-black-fat: 1.5px solid rgba(0, 0, 0, 0.13);
+$border-grey: 1px solid rgba(255, 255, 255, 0.25);
+
+// mixin
+
+@mixin title1() {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 125%;
+}
+
+@mixin title2() {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+}
+
+@mixin title3() {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+@mixin title4() {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@mixin textButton() {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+}
+
+@mixin text1() {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+}
+@mixin text2() {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@mixin text3() {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 125%;
+}
+
+@mixin text4() {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+@mixin text5() {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}

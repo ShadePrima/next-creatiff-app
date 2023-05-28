@@ -1,0 +1,23 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  width: 100px;
+  height: 120px;
+
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 125%;
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+.plus {
+  color: $color-orange;
+}
+
+.text {
+  @include text4;
+  color: $font-color-white;
+  text-transform: capitalize;
+}
