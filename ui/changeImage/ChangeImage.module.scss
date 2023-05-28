@@ -1,0 +1,40 @@
+.root {
+}
+
+.root {
+}
+
+.image {
+  animation: slide 10s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+  20% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+
+  25% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  85% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+}

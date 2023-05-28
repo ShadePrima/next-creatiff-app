@@ -1,10 +1,11 @@
-import Image from 'next/image'
 import styles from './Company.module.scss'
-import image1 from '../../assets/image/header1.png'
+
 import Button from '@/ui/button/Button'
 import Number from '@/ui/number/Number'
 
 import { numberList } from '../../helpers/number'
+import ChangeImage from '@/ui/changeImage/ChangeImage'
+import Swiper from '@/ui/changeImage/ChangeImage'
 
 export default function Company() {
   return (
@@ -12,7 +13,7 @@ export default function Company() {
       <div className='container'>
         <div className={`${styles.contentRow} ${'flex-center'}`}>
           <div className={styles.contenText}>
-            <h1>
+            <h1 data-aos='fade-right'>
               CREATIFF <br /> Ми робимо все
             </h1>
             <p className={styles.text}>
@@ -36,7 +37,7 @@ export default function Company() {
           </div>
 
           <div className={styles.contentImage}>
-            <Image src={image1} alt='build' width={520} height={670} />
+            <ChangeImage />
           </div>
         </div>
       </div>
