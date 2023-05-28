@@ -39,4 +39,8 @@
   line-height: 125%;
   text-transform: uppercase;
   color: #15132a;
+
+  &:active {
+    transform: translateY(3px);
+  }
 }
