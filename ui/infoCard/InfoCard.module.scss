@@ -1,0 +1,42 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  max-width: 400px;
+  min-height: 324px;
+  padding: 24px;
+
+  border: $border-black-fat;
+  border-radius: 8px;
+}
+
+.title {
+  margin-top: 24px;
+  @include title3;
+  color: $color-black;
+}
+
+.text {
+  margin-top: 12px;
+  @include text5;
+  color: $color-black;
+}
+
+.button {
+  margin-top: 16px;
+
+  width: 115px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid #15132a;
+  border-radius: 64px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 125%;
+  text-transform: uppercase;
+  color: #15132a;
+}
