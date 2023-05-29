@@ -5,6 +5,7 @@ import InfoCardBlock from '@/components/infoCardBlock/InfoCardBlock'
 import Partners from '@/components/partners/Partners'
 import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
+import Galllery from '@/components/gallery/Gallery'
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
         <Services />
       </div>
       <ContactBlock />
+      <div className='container'>
+        <Galllery />
+      </div>
     </main>
   )
 }

@@ -1,0 +1,21 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  margin-top: $margin-72;
+}
+
+.title {
+  @include title2;
+  color: $color-black;
+  text-align: center;
+}
+
+.wrapper {
+  margin-top: $margin-48;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}

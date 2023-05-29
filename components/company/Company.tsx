@@ -3,9 +3,8 @@ import styles from './Company.module.scss'
 import Button from '@/ui/button/Button'
 import Number from '@/ui/number/Number'
 
-import { numberList } from '../../helpers/number'
+import { numberList } from '../../helpers/numberList'
 import ChangeImage from '@/ui/changeImage/ChangeImage'
-import Swiper from '@/ui/changeImage/ChangeImage'
 
 export default function Company() {
   return (
