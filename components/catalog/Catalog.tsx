@@ -7,10 +7,10 @@ import { catalogList } from '../../helpers/catalogList'
 
 export default function Catalog() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       {catalogList.map((item) => (
         <CatalogItem key={item.id} title={item.title} text={item.text} />
       ))}
-    </div>
+    </section>
   )
 }

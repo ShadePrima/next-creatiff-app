@@ -3,13 +3,13 @@ import styles from './ContactBlock.module.scss'
 
 export default function ContactBlock() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className='container'>
         <div className={styles.wrapper}>
           <h1 className={styles.title}>Вас зацікавили наші пропозиції?</h1>
           <Button title="Зв'язатись з консультантом" width={399} height={56} />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

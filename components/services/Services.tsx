@@ -7,7 +7,7 @@ import styles from './Services.module.scss'
 
 export default function Services() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <Image src={image} alt='Kitchen' width={465} height={674} />
       <div className={styles.content}>
         <h1 className={styles.title}>
@@ -19,6 +19,6 @@ export default function Services() {
         </p>
         <Catalog />
       </div>
-    </div>
+    </section>
   )
 }

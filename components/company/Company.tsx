@@ -8,7 +8,7 @@ import ChangeImage from '@/ui/changeImage/ChangeImage'
 
 export default function Company() {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <div className='container'>
         <div className={`${styles.contentRow} ${'flex-center'}`}>
           <div className={styles.contenText}>
@@ -40,6 +40,6 @@ export default function Company() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
