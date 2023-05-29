@@ -4,6 +4,7 @@ import Company from '@/components/company/Company'
 import InfoCardBlock from '@/components/infoCardBlock/InfoCardBlock'
 import Partners from '@/components/partners/Partners'
 import Services from '@/components/services/Services'
+import ContactBlock from '@/components/contactBlock/ContactBlock'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Partners />
         <Services />
       </div>
+      <ContactBlock />
     </main>
   )
 }

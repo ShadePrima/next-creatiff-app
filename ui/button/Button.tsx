@@ -2,13 +2,13 @@ import styles from './Button.module.scss'
 
 type Props = {
   title: string
-  width: number
-  height: number
+  maxWidth: number
+  minHeight: number
 }
 
-export default function Button({ title, width, height }: Props) {
+export default function Button({ title, maxWidth, minHeight }: Props) {
   return (
-    <div className={styles.root} style={{ width, height }}>
+    <div className={styles.root} style={{ maxWidth, minHeight }}>
       {title}
     </div>
   )

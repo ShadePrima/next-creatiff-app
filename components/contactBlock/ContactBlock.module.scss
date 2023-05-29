@@ -1,0 +1,26 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  min-height: 234px;
+  background: $background-offer;
+}
+
+.wrapper {
+  max-width: 782px;
+  margin: 0 auto;
+  padding: 48px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+
+.title {
+  text-align: center;
+
+  @include title2;
+
+  color: $color-white;
+  text-transform: uppercase;
+}
