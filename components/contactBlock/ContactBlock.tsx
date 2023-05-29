@@ -7,7 +7,11 @@ export default function ContactBlock() {
       <div className='container'>
         <div className={styles.wrapper}>
           <h1 className={styles.title}>Вас зацікавили наші пропозиції?</h1>
-          <Button title="Зв'язатись з консультантом" width={399} height={56} />
+          <Button
+            title="Зв'язатись з консультантом"
+            maxWidth={399}
+            minHeight={56}
+          />
         </div>
       </div>
     </section>

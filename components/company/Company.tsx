@@ -21,7 +21,7 @@ export default function Company() {
               та замовити модульний будинок, меблі
             </p>
             <div className={styles.button}>
-              <Button title='Реалізувати ідею' width={263} height={56} />
+              <Button title='Реалізувати ідею' maxWidth={263} minHeight={56} />
             </div>
 
             <div className={`${'flex-between'} ${styles.numbers}`}>
