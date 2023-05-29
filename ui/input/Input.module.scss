@@ -26,4 +26,8 @@
 
   @include text3;
   color: rgba(21, 19, 42, 0.5);
+
+  @media (max-width: 360px) {
+    max-width: 300px;
+  }
 }

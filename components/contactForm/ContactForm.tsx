@@ -1,6 +1,7 @@
 import Input from '@/ui/input/Input'
 
 import styles from './ContactForm.module.scss'
+import Button from '@/ui/button/Button'
 
 export default function ContactForm() {
   return (
@@ -26,6 +27,13 @@ export default function ContactForm() {
             type='tel'
             placeholder='+34 951 392 250'
           />
+        </div>
+        <div className={styles.textArea}>
+          <h2>Ваш лист</h2>
+          <textarea placeholder='Садок вишневий коло хати...' />
+        </div>
+        <div className={styles.button}>
+          <Button title='Надіслати листа' maxWidth={356} minHeight={56} />
         </div>
       </div>
     </div>
