@@ -24,12 +24,14 @@ export default function Furniture() {
         <div className={styles.table}>
           {furnitureList.map((item) => (
             <div key={item.id} className={styles.tableItem}>
-              <Image src={lukas} alt='lukas' />
-              <p>Якість та гарантії</p>
+              <Image src={item.icon} alt={item.text} />
+              <p>{item.text}</p>
             </div>
           ))}
         </div>
-        <Button title='зв’язатися з нами' maxWidth={526} minHeight={56} />
+        <div className={styles.button}>
+          <Button title='зв’язатися з нами' maxWidth={526} minHeight={56} />
+        </div>
       </div>
       <Image src={image} alt='furniture' width={504} height={570} />
     </div>

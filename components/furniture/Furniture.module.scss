@@ -7,6 +7,7 @@
   justify-content: space-between;
   align-items: start;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .content {
@@ -22,4 +23,37 @@
   margin-top: $margin-32;
   @include text4;
   color: $font-color-dark;
+}
+
+.table {
+  margin-top: $margin-48;
+  max-width: 569px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+
+  @media (max-width: 425px) {
+    justify-content: center;
+  }
+}
+
+.tableItem {
+  width: 257px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 16px;
+
+  p {
+    @include text1;
+    color: $font-color-dark;
+  }
+}
+
+.button {
+  margin-top: 42px;
 }
