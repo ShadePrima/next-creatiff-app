@@ -8,6 +8,10 @@
   align-items: start;
   gap: 55px;
   flex-wrap: wrap;
+
+  @media (max-width: 850px) {
+    justify-content: center;
+  }
 }
 
 .content {

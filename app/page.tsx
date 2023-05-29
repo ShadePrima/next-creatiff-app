@@ -7,6 +7,7 @@ import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
 import Galllery from '@/components/gallery/Gallery'
 import Furniture from '@/components/furniture/Furniture'
+import ContactForm from '@/components/contactForm/ContactForm'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
         <Galllery />
         <Furniture />
       </div>
+      <ContactForm />
     </main>
   )
 }

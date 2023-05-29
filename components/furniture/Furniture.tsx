@@ -2,8 +2,9 @@ import Image from 'next/image'
 
 import image from '../../assets/image/furniture-image.png'
 import lukas from '../../assets/icons/lukas-green.svg'
-import styles from './Furniture.module.scss'
 import Button from '@/ui/button/Button'
+
+import styles from './Furniture.module.scss'
 
 import { furnitureList } from '../../helpers/furnitureList'
 

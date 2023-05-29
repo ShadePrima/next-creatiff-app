@@ -1,17 +1,23 @@
 @import '../../styles/variables.module.scss';
 
 .root {
-  margin-top: $margin-72;
+  background: $background-contact;
+}
+
+.wrapper {
+  max-width: 1044px;
+  margin: 0 auto;
+  padding: 72px 10px;
 }
 
 .title {
   @include title2;
-  color: $color-black;
+  color: $color-white;
   text-align: center;
 }
 
-.wrapper {
-  margin-top: $margin-48;
+.inputBlock {
+  margin-top: $margin-32;
 
   display: flex;
   justify-content: space-between;
@@ -19,7 +25,7 @@
   gap: 16px;
   flex-wrap: wrap;
 
-  @media (max-width: 850px) {
+  @media (max-width: 700px) {
     justify-content: center;
   }
 }

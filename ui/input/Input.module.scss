@@ -1,0 +1,29 @@
+@import '../../styles/variables.module.scss';
+
+.root {
+  max-width: 330px;
+  min-height: 94px;
+}
+
+.title {
+  @include text1;
+  color: $color-white;
+
+  span {
+    color: $color-orange;
+  }
+}
+
+.input {
+  margin-top: 8px;
+  max-width: 330px;
+  min-height: 56px;
+  padding: 13px 16px;
+
+  background: $color-white;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+
+  @include text3;
+  color: rgba(21, 19, 42, 0.5);
+}
