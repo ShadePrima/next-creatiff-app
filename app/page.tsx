@@ -6,6 +6,7 @@ import Partners from '@/components/partners/Partners'
 import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
 import Galllery from '@/components/gallery/Gallery'
+import Furniture from '@/components/furniture/Furniture'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <ContactBlock />
       <div className='container'>
         <Galllery />
+        <Furniture />
       </div>
     </main>
   )
