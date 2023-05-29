@@ -7,6 +7,10 @@
 
   border: $border-black-fat;
   border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .title {
