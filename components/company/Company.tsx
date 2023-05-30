@@ -1,10 +1,10 @@
 import styles from './Company.module.scss'
 
-import Button from '@/ui/button/Button'
 import Number from '@/ui/number/Number'
 
 import { numberList } from '../../helpers/numberList'
 import ChangeImage from '@/ui/changeImage/ChangeImage'
+import CompanyButton from '@/ui/companyButton/CompanyButton'
 
 export default function Company() {
   return (
@@ -21,7 +21,7 @@ export default function Company() {
               та замовити модульний будинок, меблі
             </p>
             <div className={styles.button}>
-              <Button title='Реалізувати ідею' maxWidth={263} minHeight={56} />
+              <CompanyButton />
             </div>
 
             <div className={`${'flex-between'} ${styles.numbers}`}>

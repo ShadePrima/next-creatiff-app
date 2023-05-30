@@ -53,7 +53,9 @@ export default function ContactForm() {
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>ВИНИКЛИ ПИТАННЯ? НАПИШИ НАМ</h1>
+        <h1 id='contactForm' className={styles.title}>
+          ВИНИКЛИ ПИТАННЯ? НАПИШИ НАМ
+        </h1>
         <form onSubmit={handSubmit}>
           <div className={styles.inputBlock}>
             <Input

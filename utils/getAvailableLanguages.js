@@ -9,7 +9,6 @@ export const getAvailableLanguages = async () => {
         Authorization: `Token ${token}`,
       },
     })
-    console.log(res.data, 'res getAvail')
     return res.data
   } catch (err) {
     console.log(err)

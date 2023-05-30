@@ -1,3 +1,4 @@
+import { MouseEventHandler } from 'react'
 import styles from './Button.module.scss'
 
 type Props = {
@@ -5,12 +6,24 @@ type Props = {
   maxWidth: number
   minHeight: number
   type?: 'button' | 'submit' | 'reset' | undefined
+  onClick?: MouseEventHandler<HTMLButtonElement>
 }
 
-export default function Button({ title, maxWidth, minHeight, type }: Props) {
+export default function Button({
+  title,
+  maxWidth,
+  minHeight,
+  type,
+  onClick,
+}: Props) {
   console.log(type, 'type')
   return (
-    <button type={type} className={styles.root} style={{ maxWidth, minHeight }}>
+    <button
+      onClick={onClick}
+      type={type}
+      className={styles.root}
+      style={{ maxWidth, minHeight }}
+    >
       {title}
     </button>
   )
