@@ -1,7 +1,8 @@
 @import '../../styles/variables.module.scss';
 
 .root {
-  margin-top: $margin-72;
+  // margin-top: $margin-72;
+  margin: 72px 0 52px;
 
   display: flex;
   justify-content: space-between;
@@ -59,5 +60,5 @@
 }
 
 .button {
-  margin-top: 42px;
+  margin-top: 48px;
 }
