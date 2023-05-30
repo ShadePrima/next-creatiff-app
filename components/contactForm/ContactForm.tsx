@@ -16,10 +16,7 @@ export default function ContactForm() {
     message: '',
   })
 
-  console.log(form, 'form')
-
   const handleInput = (event: any) => {
-    console.log(event, 'event')
     const { target } = event
     const value = target.value
 
@@ -44,7 +41,6 @@ export default function ContactForm() {
           },
         }
       )
-      console.log(response.data)
     } catch (err) {
       console.log(err)
     }

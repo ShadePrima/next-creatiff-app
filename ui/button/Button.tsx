@@ -16,7 +16,6 @@ export default function Button({
   type,
   onClick,
 }: Props) {
-  console.log(type, 'type')
   return (
     <button
       onClick={onClick}

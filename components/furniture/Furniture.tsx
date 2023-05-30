@@ -7,6 +7,7 @@ import Button from '@/ui/button/Button'
 import styles from './Furniture.module.scss'
 
 import { furnitureList } from '../../helpers/furnitureList'
+import FurnitureButton from '../buttons/FurnitureButton'
 
 export default function Furniture() {
   return (
@@ -31,7 +32,7 @@ export default function Furniture() {
           ))}
         </div>
         <div className={styles.button}>
-          <Button title='зв’язатися з нами' maxWidth={526} minHeight={56} />
+          <FurnitureButton />
         </div>
       </div>
       <Image src={image} alt='furniture' width={504} height={570} />

@@ -1,7 +1,7 @@
 'use client'
 
+import Button from '@/ui/button/Button'
 import { scrollToForm } from '@/utils/scrollToForm'
-import Button from '../button/Button'
 
 export default function CompanyButton() {
   return (

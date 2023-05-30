@@ -4,7 +4,7 @@ import Number from '@/ui/number/Number'
 
 import { numberList } from '../../helpers/numberList'
 import ChangeImage from '@/ui/changeImage/ChangeImage'
-import CompanyButton from '@/ui/companyButton/CompanyButton'
+import CompanyButton from '../buttons/CompanyButton'
 
 export default function Company() {
   return (
