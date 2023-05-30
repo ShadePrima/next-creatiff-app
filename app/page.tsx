@@ -23,7 +23,6 @@ export default function Home() {
         <Galllery />
         <Furniture />
       </div>
-      <ContactForm />
     </main>
   )
 }
