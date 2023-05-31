@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './page.module.scss'
 import Company from '@/components/company/Company'
 import InfoCardBlock from '@/components/infoCardBlock/InfoCardBlock'
@@ -7,7 +6,6 @@ import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
 import Galllery from '@/components/gallery/Gallery'
 import Furniture from '@/components/furniture/Furniture'
-import ContactForm from '@/components/contactForm/ContactForm'
 
 export default function Home() {
   return (

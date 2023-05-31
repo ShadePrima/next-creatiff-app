@@ -7,7 +7,12 @@ export default function InfoCardBlock() {
   return (
     <section className={styles.root}>
       {infoCardList.map((card) => (
-        <InfoCard key={card.id} title={card.title} text={card.text} />
+        <InfoCard
+          key={card.id}
+          title={card.title}
+          text={card.text}
+          link={card.link}
+        />
       ))}
     </section>
   )
