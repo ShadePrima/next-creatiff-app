@@ -17,7 +17,9 @@ export default function Footer() {
           {footerContactList.map((item) => (
             <div key={item.id} className={styles.contactItem}>
               <Image src={item.icon} alt='icon' />
-              <p className={styles.text}>{item.text}</p>
+              <a href={item.link} target='_blank' className={styles.text}>
+                {item.text}
+              </a>
             </div>
           ))}
         </div>

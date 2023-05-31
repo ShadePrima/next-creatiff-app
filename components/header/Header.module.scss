@@ -43,7 +43,7 @@
 .tel {
   gap: 12px;
 
-  p {
+  a {
     @include text2;
     color: $color-white;
   }

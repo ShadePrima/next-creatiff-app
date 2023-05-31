@@ -31,12 +31,14 @@ export default function Header() {
           <div className={`${styles.contactRow} ${'flex-between'}`}>
             <div className={`${styles.email} ${'flex-between'}`}>
               <Image src={email} alt='Email' />
-              <p>star.creatiff@gmail.com</p>
+              <a href='mailto:star.creatiff@gmail.com'>
+                star.creatiff@gmail.com
+              </a>
             </div>
 
             <div className={`${styles.tel} ${'flex-between'}`}>
               <Image src={telephone} alt='Telephone' />
-              <p>951 392 250</p>
+              <a href='tel:951-392-250'>951 392 250</a>
             </div>
           </div>
         </div>
