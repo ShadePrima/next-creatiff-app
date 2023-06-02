@@ -8,7 +8,7 @@ export default function CompanyButton() {
     <Button
       onClick={scrollToForm}
       title='Реалізувати ідею'
-      maxWidth={263}
+      maxWidth={268}
       minHeight={56}
     />
   )

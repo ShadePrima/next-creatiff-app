@@ -1,11 +1,11 @@
 const routes = Object.freeze({
   main: '/',
-  buildCard: '/card/build',
-  equipCard: '/card/equip',
-  equipmentCard: '/card/equipment',
-  generalCard: '/card/general',
-  metalCard: '/card/metal',
-  windowCard: '/card/windows',
+  buildCard: '/build',
+  equipCard: '/equip',
+  equipmentCard: '/equipment',
+  generalCard: '/general',
+  metalCard: '/metal',
+  windowCard: '/windows',
 })
 
 export default routes

@@ -1,4 +1,5 @@
 import styles from './Company.module.scss'
+import useTranslation from 'next-translate/useTranslation'
 
 import Number from '@/ui/number/Number'
 
