@@ -7,6 +7,7 @@ import telephone from '../../assets/icons/telephone.svg'
 
 import { segoeScript } from '../../styles/fonts'
 import Link from 'next/link'
+import LocaleSwitcher from '@/app/components/locale-switcher'
 
 export default function Header() {
   return (

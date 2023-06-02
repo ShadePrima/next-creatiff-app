@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.2.32",
     "@types/node": "20.2.4",
     "@types/react": "18.2.7",
     "@types/react-dom": "18.2.4",
@@ -16,6 +17,7 @@
     "axios": "^1.4.0",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.4",
+    "negotiator": "^0.6.3",
     "next": "13.4.4",
     "next-translate": "^2.0.6",
     "normalize.css": "^8.0.1",
@@ -27,6 +29,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
+    "@types/negotiator": "^0.6.1",
     "next-translate-plugin": "^2.0.5",
     "sass": "^1.62.1"
   }

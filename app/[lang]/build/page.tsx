@@ -1,8 +1,8 @@
 import Image from 'next/image'
-import image1 from '../../assets/image/build-image-1.png'
-import image2 from '../../assets/image/build-image-2.png'
-import image3 from '../../assets/image/build-image-3.png'
-import image4 from '../../assets/image/build-image-4.png'
+import image1 from '../../../assets/image/build-image-1.png'
+import image2 from '../../../assets/image/build-image-2.png'
+import image3 from '../../../assets/image/build-image-3.png'
+import image4 from '../../../assets/image/build-image-4.png'
 import styles from './page.module.scss'
 
 export const metadata = {
