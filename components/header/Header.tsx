@@ -41,6 +41,8 @@ export default function Header() {
               <Image src={telephone} alt='Telephone' />
               <a href='tel:951-392-250'>951 392 250</a>
             </div>
+
+            <LocaleSwitcher />
           </div>
         </div>
       </div>

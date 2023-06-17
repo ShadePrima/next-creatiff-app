@@ -29,9 +29,6 @@ export default function RootLayout({
   return (
     <html lang={params.lang}>
       <body className={inter.className}>
-        <div style={{ padding: '10px', marginLeft: '100px' }}>
-          <LocaleSwitcher />
-        </div>
         <Header />
         {children}
         <ContactForm />
