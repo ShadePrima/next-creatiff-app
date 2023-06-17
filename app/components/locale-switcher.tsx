@@ -17,8 +17,6 @@ import {
 
 export default function LocaleSwitcher() {
   const router = useRouter()
-  // const { query } = router
-  // console.log(query.lang, 'lang')
 
   console.log(router, 'router')
   const [language, setLanguage] = React.useState('')
@@ -56,19 +54,28 @@ export default function LocaleSwitcher() {
 
   return (
     <>
-      <Box sx={{ minWidth: 80 }}>
-        <FormControl fullWidth>
-          <InputLabel id='demo-simple-select-label'>Lang</InputLabel>
+      <Box sx={{ minWidth: 80 }} className={styles.box}>
+        <FormControl className={styles.formControl} fullWidth>
+          <InputLabel id='demo-simple-select-label' className={styles.label}>
+            Lang
+          </InputLabel>
           <Select
             labelId='demo-simple-select-label'
             id='demo-simple-select'
             value={language}
             label='Lang'
             onChange={handleChange}
+            className={styles.select}
           >
-            <MenuItem value={'en'}>En</MenuItem>
-            <MenuItem value={'uk'}>Uk</MenuItem>
-            <MenuItem value={'es'}>Es</MenuItem>
+            <MenuItem className={styles.menuItem} value={'en'}>
+              En
+            </MenuItem>
+            <MenuItem className={styles.menuItem} value={'uk'}>
+              Uk
+            </MenuItem>
+            <MenuItem className={styles.menuItem} value={'es'}>
+              Es
+            </MenuItem>
           </Select>
         </FormControl>
       </Box>
