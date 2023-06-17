@@ -1,3 +1,11 @@
+.root {
+  @media (max-width: 560px) {
+    position: absolute;
+    top: 52px;
+    right: 32px;
+  }
+}
+
 .box {
   color: white;
 }

@@ -53,7 +53,7 @@ export default function LocaleSwitcher() {
   }
 
   return (
-    <>
+    <div className={styles.root}>
       <Box sx={{ minWidth: 80 }} className={styles.box}>
         <FormControl className={styles.formControl} fullWidth>
           <InputLabel id='demo-simple-select-label' className={styles.label}>
@@ -91,6 +91,6 @@ export default function LocaleSwitcher() {
           })}
         </ul>
       </div> */}
-    </>
+    </div>
   )
 }
