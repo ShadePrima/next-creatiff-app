@@ -2,10 +2,14 @@ import styles from './Partners.module.scss'
 import partnerImg from '../../assets/image/partners.png'
 import Image from 'next/image'
 
-export default function Partners() {
+type Props = {
+  dictionary: any
+}
+
+export default function Partners({ dictionary }: Props) {
   return (
     <section className={styles.root}>
-      <h1>Наші партери:</h1>
+      <h1>{dictionary.partners.title}:</h1>
       <div className={styles.imgRow}>
         <Image src={partnerImg} alt='partner' />
         <Image src={partnerImg} alt='partner' />
