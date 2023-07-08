@@ -8,16 +8,17 @@ type Props = {
   title: string
   text: string
   link: string
+  buttonText: string
 }
 
-export default function InfoCard({ title, text, link }: Props) {
+export default function InfoCard({ title, text, link, buttonText }: Props) {
   return (
     <div className={styles.root}>
       <Image src={homeIcon} alt='home' />
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.text}>{text}</p>
       <Link href={link}>
-        <button className={styles.button}>Читати далі</button>
+        <button className={styles.button}>{buttonText}</button>
       </Link>
     </div>
   )

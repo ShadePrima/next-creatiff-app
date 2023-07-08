@@ -8,5 +8,13 @@
     "cardOne": "Happy Customers",
     "cardTwo": "Furniture Sold",
     "cardThree": "Constructed structures"
+  },
+  "infoCard": {
+    "cardOne": "Making houses from shipping containers",
+    "cardTwo": "Sale of industrial equipment",
+    "cardThree": "Manufacture of steel structures",
+    "cardFifth": "Windows and doors",
+    "cardSixth": "Civil Works",
+    "infoButton": "Read more"
   }
 }

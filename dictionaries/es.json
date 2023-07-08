@@ -8,5 +8,13 @@
     "cardOne": "Clientes Felices",
     "cardTwo": "Muebles Vendido",
     "cardThree": "Estructuras construidas"
+  },
+  "infoCard": {
+    "cardOne": "Fabricación de casas a partir de contenedores",
+    "cardTwo": "Venta de equipos industriales",
+    "cardThree": "Fabricación de estructuras de acero",
+    "cardFifth": "Ventanas y puertas",
+    "cardSixth": "Obras Civiles",
+    "infoButton": "Leer más"
   }
 }
