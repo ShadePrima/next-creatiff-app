@@ -1,5 +1,12 @@
 {
   "company": {
-    "title": "Hacemos lo"
+    "title": "Hacemos lo",
+    "description": "Habrá un texto sobre lo que una compañía fresca que tenemos, lo que una amplia gama de servicios que tenemos, y lo que en este momento se puede pedir trabajo, y pedir una casa modular, muebles",
+    "button": "implementar la idea"
+  },
+  "number": {
+    "cardOne": "Clientes Felices",
+    "cardTwo": "Muebles Vendido",
+    "cardThree": "Estructuras construidas"
   }
 }

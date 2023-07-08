@@ -18,10 +18,7 @@ import {
 export default function LocaleSwitcher() {
   const router = useRouter()
 
-  console.log(router, 'router')
   const [language, setLanguage] = React.useState('')
-
-  console.log(language, 'language')
 
   const handleChange = (event: SelectChangeEvent) => {
     setLanguage(event.target.value as string)
@@ -42,8 +39,6 @@ export default function LocaleSwitcher() {
       setLanguage(segments[1])
     }
   }, [pathName])
-
-  console.log(pathName, 'pathName')
 
   const redirectedPathName = (locale: string) => {
     if (!pathName) return '/'

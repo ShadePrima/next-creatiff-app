@@ -1,5 +1,12 @@
 {
   "company": {
-    "title": "We do everything"
+    "title": "We do everything",
+    "description": "Here will be a text about what kind of cool company we have, what kind of company we have a wide range of services, and that right now you can order work, and order a modular house, furniture",
+    "button": "Implement the idea"
+  },
+  "number": {
+    "cardOne": "Happy Customers",
+    "cardTwo": "Furniture Sold",
+    "cardThree": "Constructed structures"
   }
 }

@@ -3,12 +3,17 @@
 import Button from '@/ui/button/Button'
 import { scrollToForm } from '@/utils/scrollToForm'
 
-export default function CompanyButton() {
+type ButtonProps = {
+  dictionary: any
+}
+
+export default function CompanyButton({ dictionary }: ButtonProps) {
+  console.log(dictionary, 'buttonDictionary')
   return (
     <Button
       onClick={scrollToForm}
-      title='Реалізувати ідею'
-      maxWidth={268}
+      title={dictionary.company.button}
+      maxWidth={292}
       minHeight={56}
     />
   )

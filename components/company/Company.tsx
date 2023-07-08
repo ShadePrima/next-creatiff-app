@@ -3,7 +3,6 @@ import useTranslation from 'next-translate/useTranslation'
 
 import Number from '@/ui/number/Number'
 
-import { numberList } from '../../helpers/numberList'
 import ChangeImage from '@/ui/changeImage/ChangeImage'
 import CompanyButton from '../buttons/CompanyButton'
 import LocaleSwitcher from '@/app/components/locale-switcher'
@@ -13,6 +12,12 @@ type Props = {
 }
 
 export default function Company({ dictionary }: Props) {
+  const numberList = [
+    { id: 1, title: '9k', text: dictionary.number.cardOne },
+    { id: 2, title: '2k', text: dictionary.number.cardTwo },
+    { id: 3, title: '28', text: dictionary.number.cardThree },
+  ]
+
   return (
     <section className={styles.root}>
       <div className='container'>
@@ -22,13 +27,9 @@ export default function Company({ dictionary }: Props) {
               CREATIFF <br /> {dictionary['company'].title}
             </h1>
 
-            <p className={styles.text}>
-              Тут буде текст про те, яка в нас класна компанія, який в нас
-              великий спектр послуг, та що прям зараз ви можете замовити роботу,
-              та замовити модульний будинок, меблі
-            </p>
+            <p className={styles.text}>{dictionary.company.description}</p>
             <div className={styles.button}>
-              <CompanyButton />
+              <CompanyButton dictionary={dictionary} />
             </div>
 
             <div className={`${'flex-between'} ${styles.numbers}`}>
