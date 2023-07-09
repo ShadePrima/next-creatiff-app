@@ -3,11 +3,15 @@
 import { scrollToForm } from '@/utils/scrollToForm'
 import Button from '../../ui/button/Button'
 
-export default function ContactBlockButton() {
+type Props = {
+  dictionary: any
+}
+
+export default function ContactBlockButton({ dictionary }: Props) {
   return (
     <Button
       onClick={scrollToForm}
-      title="Зв'язатись з консультантом"
+      title={dictionary.contactBlock.button}
       maxWidth={399}
       minHeight={56}
     />

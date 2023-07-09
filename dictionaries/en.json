@@ -40,5 +40,13 @@
       "title": "A variety of products for your home",
       "text": "Among our types of windows we have: entrance, interior, metal-plastic"
     }
+  },
+  "contactBlock": {
+    "title": "Are you interested in our offers?",
+    "button": "Contact the consultant"
+  },
+  "gallery": {
+    "title": "Gallery of our works",
+    "button": "Our works"
   }
 }

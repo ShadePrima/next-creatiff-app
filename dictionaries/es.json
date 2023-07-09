@@ -40,5 +40,13 @@
       "title": "Una variedad de productos para su hogar",
       "text": "Entre nuestros tipos de ventanas tenemos: entrada, interior, metal-plástico"
     }
+  },
+  "contactBlock": {
+    "title": "¿Le interesan nuestras ofertas?",
+    "button": "Ponerse en contacto con el consultor"
+  },
+  "gallery": {
+    "title": "Galería de nuestras obras",
+    "button": "Nuestras obras"
   }
 }
