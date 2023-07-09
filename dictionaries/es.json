@@ -19,5 +19,26 @@
   },
   "partners": {
     "title": "Nuestros socios"
+  },
+  "services": {
+    "title": "También tenemos todo lo que necesita para su hogar"
+  },
+  "catalog": {
+    "cardOne": {
+      "title": "Amplia gama de puertas para su hogar",
+      "text": "Entre nuestros tipos de ventanas tenemos: entrada, interior, metal-plástico"
+    },
+    "cardTwo": {
+      "title": "Tenemos ventanas para cada uno de sus casos",
+      "text": "Entre nuestros tipos de ventanas tenemos: entrada, interior, metal-plástico"
+    },
+    "cardThree": {
+      "title": "Un enorme catálogo de muebles",
+      "text": "Entre nuestros tipos de ventanas tenemos: entrada, interior, metal-plástico"
+    },
+    "cardFour": {
+      "title": "Una variedad de productos para su hogar",
+      "text": "Entre nuestros tipos de ventanas tenemos: entrada, interior, metal-plástico"
+    }
   }
 }

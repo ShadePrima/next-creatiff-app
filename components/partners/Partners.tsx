@@ -1,6 +1,7 @@
 import styles from './Partners.module.scss'
 import partnerImg from '../../assets/image/partners.png'
 import Image from 'next/image'
+import React from 'react'
 
 type Props = {
   dictionary: any

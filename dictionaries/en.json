@@ -19,5 +19,26 @@
   },
   "partners": {
     "title": "Our partners"
+  },
+  "services": {
+    "title": "We also have everything you need for your home"
+  },
+  "catalog": {
+    "cardOne": {
+      "title": "Large range of doors for your home",
+      "text": "Among our types of windows we have: entrance, interior, metal-plastic"
+    },
+    "cardTwo": {
+      "title": "We have windows for each of your cases",
+      "text": "Among our types of windows we have: entrance, interior, metal-plastic"
+    },
+    "cardThree": {
+      "title": "A huge catalog of any furniture",
+      "text": "Among our types of windows we have: entrance, interior, metal-plastic"
+    },
+    "cardFour": {
+      "title": "A variety of products for your home",
+      "text": "Among our types of windows we have: entrance, interior, metal-plastic"
+    }
   }
 }

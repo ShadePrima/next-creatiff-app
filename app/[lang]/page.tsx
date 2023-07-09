@@ -10,6 +10,8 @@ import Galllery from '@/components/gallery/Gallery'
 import Furniture from '@/components/furniture/Furniture'
 
 import styles from './page.module.scss'
+import { useDictionaryStore } from '@/store/dictionaryStore'
+import React from 'react'
 
 type Props = {
   params: { lang: Locale }
@@ -24,7 +26,7 @@ export default async function Home({ params: { lang } }: Props) {
       <div className='container'>
         <InfoCardBlock dictionary={dictionary} />
         <Partners dictionary={dictionary} />
-        <Services />
+        <Services dictionary={dictionary} />
       </div>
       <ContactBlock />
       <div className='container'>
