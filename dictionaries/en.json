@@ -48,5 +48,14 @@
   "gallery": {
     "title": "Gallery of our works",
     "button": "Our works"
+  },
+  "furniture": {
+    "titleLineOne": "We can recreate everything that",
+    "titleLineTwo": "you only wish!",
+    "text": "Here will be a text about how we can make furniture to order, for example through pictures from Pinterest, taking into account all the wishes. A from below we will show our preferences, or something to choose from.",
+    "lukas": "Quality and guarantees",
+    "tool": "Our advantages",
+    "heart": "We do with love",
+    "button": "Contact us"
   }
 }

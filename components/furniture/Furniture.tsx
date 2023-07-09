@@ -2,26 +2,35 @@ import Image from 'next/image'
 
 import image from '../../assets/image/furniture-image.png'
 import lukas from '../../assets/icons/lukas-green.svg'
-import Button from '@/ui/button/Button'
+import tool from '../../assets/icons/tools.svg'
+import heart from '../../assets/icons/heart-green.svg'
 
 import styles from './Furniture.module.scss'
 
-import { furnitureList } from '../../helpers/furnitureList'
 import FurnitureButton from '../buttons/FurnitureButton'
 
-export default function Furniture() {
+type FurnitureProps = {
+  dictionary: any
+}
+
+export default function Furniture({ dictionary }: FurnitureProps) {
+  const furnitureList = [
+    { id: 1, icon: lukas, text: dictionary.furniture.lukas },
+    { id: 2, icon: tool, text: dictionary.furniture.tool },
+    { id: 3, icon: heart, text: dictionary.furniture.heart },
+    { id: 4, icon: lukas, text: dictionary.furniture.lukas },
+    { id: 5, icon: tool, text: dictionary.furniture.tool },
+    { id: 6, icon: heart, text: dictionary.furniture.heart },
+  ]
+
   return (
     <div className={styles.root}>
       <div className={styles.content}>
         <h1 className={styles.title}>
-          Ми можемо відтворити все, що <br />
-          ви тільки забажаєте!
+          {dictionary.furniture.titleLineOne} <br />
+          {dictionary.furniture.titleLineTwo}
         </h1>
-        <p className={styles.text}>
-          Тут буде текст про те, як ми вміємо робити меблі на замовлення,
-          наприклад через картинки з Pinterest, враховуючи всі побажання. А
-          знизу ми покажемо наші переваги, або щось на вибір.
-        </p>
+        <p className={styles.text}>{dictionary.furniture.text}</p>
 
         <div className={styles.table}>
           {furnitureList.map((item) => (
@@ -32,7 +41,7 @@ export default function Furniture() {
           ))}
         </div>
         <div className={styles.button}>
-          <FurnitureButton />
+          <FurnitureButton dictionary={dictionary} />
         </div>
       </div>
       <Image src={image} alt='furniture' width={504} height={570} />

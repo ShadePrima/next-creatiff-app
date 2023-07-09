@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
 
@@ -7,11 +9,9 @@ import Partners from '@/components/partners/Partners'
 import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
 import Furniture from '@/components/furniture/Furniture'
+import Gallery from '@/components/gallery/Gallery'
 
 import styles from './page.module.scss'
-import { useDictionaryStore } from '@/store/dictionaryStore'
-import React from 'react'
-import Gallery from '@/components/gallery/Gallery'
 
 type Props = {
   params: { lang: Locale }
@@ -31,7 +31,7 @@ export default async function Home({ params: { lang } }: Props) {
       <ContactBlock dictionary={dictionary} />
       <div className='container'>
         <Gallery dictionary={dictionary} />
-        <Furniture />
+        <Furniture dictionary={dictionary} />
       </div>
     </main>
   )

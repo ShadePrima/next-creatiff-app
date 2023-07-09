@@ -48,5 +48,14 @@
   "gallery": {
     "title": "Galería de nuestras obras",
     "button": "Nuestras obras"
+  },
+  "furniture": {
+    "titleLineOne": "Podemos recrear todo lo que",
+    "titleLineTwo": "usted solo desea!",
+    "text": "Aquí habrá un texto sobre cómo podemos hacer muebles a pedido, por ejemplo a través de imágenes de Pinterest, teniendo en cuenta todos los deseos. A desde abajo vamos a mostrar nuestras preferencias, o algo para elegir.",
+    "lukas": "Calidad y garantías",
+    "tool": "Nuestras ventajas",
+    "heart": "Lo hacemos con amor",
+    "button": "Contáctenos"
   }
 }
