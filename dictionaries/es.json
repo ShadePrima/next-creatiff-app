@@ -57,5 +57,18 @@
     "tool": "Nuestras ventajas",
     "heart": "Lo hacemos con amor",
     "button": "Contáctenos"
+  },
+  "contactForm": {
+    "title": "¿Alguna pregunta? ESCRÍBENOS ",
+    "name": "Tu Imme",
+    "namePlaceholder": "Ostap Bender",
+    "email": "Tu Correo",
+    "tel": "Tu teléfono",
+    "leter": "Tu carta",
+    "leterPlaceholder": "Jardín cereza círculo cabaña...",
+    "button": "Enviar una carta"
+  },
+  "footer": {
+    "title": "Retroalimentación"
   }
 }

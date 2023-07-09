@@ -8,7 +8,6 @@ type ButtonProps = {
 }
 
 export default function CompanyButton({ dictionary }: ButtonProps) {
-  console.log(dictionary, 'buttonDictionary')
   return (
     <Button
       onClick={scrollToForm}

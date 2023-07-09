@@ -8,7 +8,13 @@ import Button from '@/ui/button/Button'
 import styles from './ContactForm.module.scss'
 import axios from 'axios'
 
-export default function ContactForm() {
+type ContactFormProps = {
+  dictionary: any
+}
+
+export default function ContactForm({ dictionary }: ContactFormProps) {
+  console.log(dictionary, 'dictionary ContactFrom')
+
   const [form, setForm] = React.useState<any>({
     name: '',
     email: '',
@@ -50,24 +56,24 @@ export default function ContactForm() {
     <div className={styles.root}>
       <div className={styles.wrapper}>
         <h1 id='contactForm' className={styles.title}>
-          ВИНИКЛИ ПИТАННЯ? НАПИШИ НАМ
+          {dictionary.contactForm.title}
         </h1>
         <form onSubmit={handSubmit}>
           <div className={styles.inputBlock}>
             <Input
               // id='name'
               name='name'
-              title='Ваше Iм’я'
+              title={dictionary.contactForm.name}
               symbol='*'
               type='text'
-              placeholder='Остап Бендер'
+              placeholder={dictionary.contactForm.namePlaceholder}
               value={form.name}
               onChange={handleInput}
             />
             <Input
               // id='email'
               name='email'
-              title='Ваша Пошта'
+              title={dictionary.contactForm.email}
               symbol='*'
               type='email'
               placeholder='ostapbender@gmail.com'
@@ -77,7 +83,7 @@ export default function ContactForm() {
             <Input
               // id='tel'
               name='tel'
-              title='Ваш Телефон'
+              title={dictionary.contactForm.tel}
               symbol=''
               type='tel'
               placeholder='+34 951 392 250'
@@ -87,11 +93,11 @@ export default function ContactForm() {
           </div>
 
           <div className={styles.textArea}>
-            <h2>Ваш лист</h2>
+            <h2>{dictionary.contactForm.leter}</h2>
             <textarea
               // id='message'
               name='message'
-              placeholder='Садок вишневий коло хати...'
+              placeholder={dictionary.contactForm.leterPlaceholder}
               value={form.message}
               onChange={handleInput}
             />
@@ -99,7 +105,7 @@ export default function ContactForm() {
           <div className={styles.button}>
             <Button
               type='submit'
-              title='Надіслати листа'
+              title={dictionary.contactForm.button}
               maxWidth={356}
               minHeight={56}
             />

@@ -5,9 +5,9 @@ import lukas from '../../assets/icons/lukas-green.svg'
 import tool from '../../assets/icons/tools.svg'
 import heart from '../../assets/icons/heart-green.svg'
 
-import styles from './Furniture.module.scss'
-
 import FurnitureButton from '../buttons/FurnitureButton'
+
+import styles from './Furniture.module.scss'
 
 type FurnitureProps = {
   dictionary: any

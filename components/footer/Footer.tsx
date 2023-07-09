@@ -7,11 +7,15 @@ import styles from './Footer.module.scss'
 
 import { footerContactList } from '../../helpers/footerContactList'
 
-export default function Footer() {
+type FooterProps = {
+  dictionary: any
+}
+
+export default function Footer({ dictionary }: FooterProps) {
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>
-        <h1 className={styles.title}>Зворотній в’язок</h1>
+        <h1 className={styles.title}>{dictionary.footer.title}</h1>
 
         <div className={styles.contacts}>
           {footerContactList.map((item) => (
