@@ -24,7 +24,7 @@ export default async function Home({ params: { lang } }: Props) {
     <main className={styles.root}>
       <Company dictionary={dictionary} />
       <div className='container'>
-        <InfoCardBlock dictionary={dictionary} />
+        <InfoCardBlock dictionary={dictionary} lang={lang} />
         <Partners dictionary={dictionary} />
         <Services dictionary={dictionary} />
       </div>

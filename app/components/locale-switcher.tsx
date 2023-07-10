@@ -17,20 +17,56 @@ import {
 
 export default function LocaleSwitcher() {
   const router = useRouter()
-
   const [language, setLanguage] = React.useState('')
+  const pathName = usePathname()
+
+  React.useEffect(() => {
+    const storedLanguage = localStorage.getItem('selectedLanguage')
+    console.log(storedLanguage, 'storedLanguage')
+  }, [])
+
+  console.log(language, 'language')
+
+  React.useEffect(() => {
+    // Set the initial language state based on the current language in the URL
+    const segments = pathName.split('/')
+    if (segments.length > 1) {
+      const storedLanguage = localStorage.getItem('selectedLanguage')
+      if (!storedLanguage) {
+        setLanguage(segments[1])
+        localStorage.setItem('selectedLanguage', segments[1])
+      } else {
+        setLanguage(storedLanguage)
+      }
+    }
+  }, [pathName])
 
   const handleChange = (event: SelectChangeEvent) => {
-    setLanguage(event.target.value as string)
+    const selectedLanguage = event.target.value as string
+    setLanguage(selectedLanguage)
+    localStorage.setItem('selectedLanguage', selectedLanguage)
+  }
+
+  const redirectedPathName = () => {
+    if (!pathName) return '/'
+    const segments = pathName.split('/')
+    console.log(segments, 'segments')
+
+    const storedLanguage = localStorage.getItem('selectedLanguage')
+    console.log(storedLanguage, 'stored language')
+    if (segments.length > 1 && storedLanguage) {
+      segments[1] = storedLanguage
+    }
+    return segments.join('/')
   }
 
   React.useEffect(() => {
     if (language) {
-      router.push(`/${language}`)
+      router.push(redirectedPathName())
     }
-  }, [language, router])
+  }, [language])
 
-  const pathName = usePathname()
+  console.log(pathName, 'pathName')
 
   React.useEffect(() => {
     // Set the initial language state based on the current language in the URL
@@ -39,13 +75,6 @@ export default function LocaleSwitcher() {
       setLanguage(segments[1])
     }
   }, [pathName])
-
-  const redirectedPathName = (locale: string) => {
-    if (!pathName) return '/'
-    const segments = pathName.split('/')
-    segments[1] = locale
-    return segments.join('/')
-  }
 
   return (
     <div className={styles.root}>

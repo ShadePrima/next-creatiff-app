@@ -13,8 +13,6 @@ type ContactFormProps = {
 }
 
 export default function ContactForm({ dictionary }: ContactFormProps) {
-  console.log(dictionary, 'dictionary ContactFrom')
-
   const [form, setForm] = React.useState<any>({
     name: '',
     email: '',

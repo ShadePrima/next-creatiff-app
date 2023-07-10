@@ -70,5 +70,8 @@
   },
   "footer": {
     "title": "Retroalimentación"
+  },
+  "build": {
+    "titleOne": "Fabricación de casas a partir de contenedores"
   }
 }

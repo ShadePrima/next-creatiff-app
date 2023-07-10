@@ -2,12 +2,14 @@ import InfoCard from '@/ui/infoCard/InfoCard'
 import styles from './InfoCardBlok.module.scss'
 
 import routes from '@/utils/routes'
+import { Locale } from '@/i18n-config'
 
 type Props = {
   dictionary: any
+  lang: Locale
 }
 
-export default function InfoCardBlock({ dictionary }: Props) {
+export default function InfoCardBlock({ dictionary, lang }: Props) {
   const infoCardList = [
     {
       id: 1,

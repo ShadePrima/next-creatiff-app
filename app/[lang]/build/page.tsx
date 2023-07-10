@@ -4,13 +4,25 @@ import image2 from '../../../assets/image/build-image-2.png'
 import image3 from '../../../assets/image/build-image-3.png'
 import image4 from '../../../assets/image/build-image-4.png'
 import styles from './page.module.scss'
+import { Locale, i18n } from '@/i18n-config'
+import { getDictionary } from '@/get-dictionary'
 
 export const metadata = {
   title: 'Виготовлення будинків з морських контейнерів',
   description: 'CREATIFF',
 }
 
-export default function Build() {
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }))
+}
+
+type BuildProps = {
+  params: { lang: Locale }
+}
+
+export default async function Build({ params }: BuildProps) {
+  const dictionary = await getDictionary(params.lang)
+
   return (
     <div className={styles.root}>
       <div className='container'>
@@ -18,7 +30,7 @@ export default function Build() {
           <Image src={image1} alt='build' />
         </div>
         <div className={styles.textBlock}>
-          <h1>Виготовлення будинків з морських контейнерів</h1>
+          <h1>{dictionary.build.titleOne}</h1>
           <p>
             Сasa prefabricada- сборный дом, предварительно изготовленный на
             фабрике. После пандемии covid-19 множество людей не раз думали, что

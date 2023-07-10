@@ -70,5 +70,8 @@
   },
   "footer": {
     "title": "Feedback"
+  },
+  "build": {
+    "titleOne": "Making houses from shipping containers"
   }
 }
