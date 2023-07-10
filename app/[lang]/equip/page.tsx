@@ -1,3 +1,4 @@
+import { Locale } from '@/i18n-config'
 import styles from './page.module.scss'
 
 export const metadata = {
@@ -5,7 +6,12 @@ export const metadata = {
   description: 'CREATIFF',
 }
 
-export default function Equipment() {
+type Props = {
+  params: { lang: Locale }
+}
+
+export default function Equipment({ params }: Props) {
+  console.log(params.lang, 'equipmentPage')
   return (
     <div className={styles.root}>
       <div className='container'>

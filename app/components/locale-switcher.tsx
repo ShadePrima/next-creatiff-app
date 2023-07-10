@@ -92,18 +92,6 @@ export default function LocaleSwitcher() {
           </Select>
         </FormControl>
       </Box>
-      {/* <div>
-        <p>Lang</p>
-        <ul>
-          {i18n.locales.map((locale) => {
-            return (
-              <li key={locale}>
-                <Link href={redirectedPathName(locale)}>{locale}</Link>
-              </li>
-            )
-          })}
-        </ul>
-      </div> */}
     </div>
   )
 }
