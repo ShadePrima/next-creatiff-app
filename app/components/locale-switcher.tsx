@@ -21,13 +21,6 @@ export default function LocaleSwitcher() {
   const pathName = usePathname()
 
   React.useEffect(() => {
-    const storedLanguage = localStorage.getItem('selectedLanguage')
-    console.log(storedLanguage, 'storedLanguage')
-  }, [])
-
-  console.log(language, 'language')
-
-  React.useEffect(() => {
     // Set the initial language state based on the current language in the URL
     const segments = pathName.split('/')
     if (segments.length > 1) {
@@ -50,10 +43,8 @@ export default function LocaleSwitcher() {
   const redirectedPathName = () => {
     if (!pathName) return '/'
     const segments = pathName.split('/')
-    console.log(segments, 'segments')
 
     const storedLanguage = localStorage.getItem('selectedLanguage')
-    console.log(storedLanguage, 'stored language')
     if (segments.length > 1 && storedLanguage) {
       segments[1] = storedLanguage
     }
@@ -65,8 +56,6 @@ export default function LocaleSwitcher() {
       router.push(redirectedPathName())
     }
   }, [language])
-
-  console.log(pathName, 'pathName')
 
   React.useEffect(() => {
     // Set the initial language state based on the current language in the URL
