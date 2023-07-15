@@ -37,7 +37,7 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
       const token = '88e021c16c9e26ef55cdae66219a2f81a6665534'
 
       const response = await axios.post(
-        'http://16.16.208.23:8000/feedback/',
+        'http://web:8000/feedback/',
         form,
         {
           headers: {
