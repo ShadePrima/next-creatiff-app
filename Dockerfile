@@ -13,4 +13,4 @@ RUN npm run build
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["sh", "-c", "npm run cypress:run ; stored_exit_code=$? ; npm run report:generate ; exit $stored_exit_code"]
