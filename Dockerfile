@@ -1,16 +1,14 @@
-
-FROM node:16
+FROM node:latest
 
 WORKDIR /app
 
-COPY package*.json ./
+COPY package.json ./
+COPY package-lock.json ./
 
-RUN npm install
+RUN npm ci
 
 COPY . .
 
 RUN npm run build
 
-EXPOSE 3000
-
-CMD ["sh", "-c", "npm run cypress:run ; stored_exit_code=$? ; npm run report:generate ; exit $stored_exit_code"]
+CMD ["npm", "start"]
