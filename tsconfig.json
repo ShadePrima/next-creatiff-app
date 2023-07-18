@@ -29,7 +29,8 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "ui/changeImage/ChangeImage.jsx",
-    "ui/changeImage/ChangeImage.jsx"
+    "ui/changeImage/ChangeImage.jsx",
+    "middleware.js"
   ],
   "exclude": ["node_modules"]
 }

@@ -10,11 +10,6 @@ import { getDictionary } from '@/get-dictionary'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export const metadata = {
-  title: 'CREATIFF - REALIZAMOS IDEAS',
-  description: 'CREATIFF',
-}
-
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
@@ -26,6 +21,7 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang: Locale }
 }) {
+  // const currentLang = params.lang
   const dictionary = await getDictionary(params.lang)
 
   return (
@@ -38,4 +34,9 @@ export default async function RootLayout({
       </body>
     </html>
   )
+}
+
+export const metadata = {
+  title: 'CREATIFF - REALIZAMOS IDEAS',
+  description: 'CREATIFF',
 }

@@ -1,0 +1,73 @@
+.root {
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.globeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // height: 100vh;
+}
+
+.globe {
+  padding-top: 4px;
+  margin-left: 32px;
+}
+
+.lang {
+  margin-left: 12px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: white;
+  text-transform: uppercase;
+}
+
+.arrow {
+  margin-left: 8px;
+}
+
+.select {
+  position: absolute;
+  top: 40px;
+  left: -143px;
+  z-index: 10;
+
+  padding: 24px 96px 24px 24px;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 16px;
+
+  width: 256px;
+  height: 170px;
+  opacity: 0;
+  background-color: white;
+
+  border-radius: 8px;
+  border: 1.5px solid rgba(0, 0, 0, 0.13);
+  background: #fff;
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.open {
+  opacity: 1;
+}
+
+.selectItem {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}

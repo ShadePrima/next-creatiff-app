@@ -8,6 +8,7 @@ import telephone from '../../assets/icons/telephone.svg'
 import { segoeScript } from '../../styles/fonts'
 import Link from 'next/link'
 import LocaleSwitcher from '@/app/components/locale-switcher'
+import LocaleSwitcherCustom from '../locale-switcher/LocaleSwitcherCustom'
 
 export default function Header() {
   return (
@@ -42,7 +43,7 @@ export default function Header() {
               <a href='tel:951-392-250'>951 392 250</a>
             </div>
 
-            <LocaleSwitcher />
+            <LocaleSwitcherCustom />
           </div>
         </div>
       </div>
