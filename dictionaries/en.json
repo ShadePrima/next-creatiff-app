@@ -10,11 +10,26 @@
     "cardThree": "Constructed structures"
   },
   "infoCard": {
-    "cardOne": "Making houses from shipping containers",
-    "cardTwo": "Sale of industrial equipment",
-    "cardThree": "Manufacture of steel structures",
-    "cardFifth": "Windows and doors",
-    "cardSixth": "Civil Works",
+    "cardOne": {
+      "title": "Building Houses from Shipping Containers",
+      "text": "Our talented professionals transform shipping containers into modern, environmentally friendly, and functional spaces."
+    },
+    "cardTwo": {
+      "title": "Industrial Equipment Sales",
+      "text": "We offer a wide range of high-quality equipment for various sectors of the industry."
+    },
+    "cardThree": {
+      "title": "Metal Constructions Manufacturing",
+      "text": "We have modern technologies and high-quality materials to create strong and reliable structures for your projects."
+    },
+    "cardFifth": {
+      "title": "Windows and Doors",
+      "text": "We also specialize in selling windows and doors of various styles, designs, and materials to meet your unique customer requirements."
+    },
+    "cardSixth": {
+      "title": "General Construction Works",
+      "text": "We provide complete construction project execution, taking into account all the details."
+    },
     "infoButton": "Read more"
   },
   "partners": {

@@ -10,11 +10,26 @@
     "cardThree": "Estructuras construidas"
   },
   "infoCard": {
-    "cardOne": "Fabricación de casas a partir de contenedores",
-    "cardTwo": "Venta de equipos industriales",
-    "cardThree": "Fabricación de estructuras de acero",
-    "cardFifth": "Ventanas y puertas",
-    "cardSixth": "Obras Civiles",
+    "cardOne": {
+      "title": "Construcción de casas a partir de contenedores de envío",
+      "text": "Nuestros talentosos profesionales transforman contenedores de envío en espacios modernos, respetuosos con el medio ambiente y funcionales."
+    },
+    "cardTwo": {
+      "title": "Venta de Equipos Industriales",
+      "text": "Ofrecemos una amplia gama de equipos de alta calidad para diversos sectores de la industria."
+    },
+    "cardThree": {
+      "title": "Fabricación de Construcciones Metálicas",
+      "text": "Contamos con tecnologías modernas y materiales de alta calidad para crear estructuras fuertes y confiables para tus proyectos."
+    },
+    "cardFifth": {
+      "title": "Ventanas y Puertas",
+      "text": "También nos especializamos en la venta de ventanas y puertas de diversos estilos, diseños y materiales para satisfacer tus requisitos únicos como cliente."
+    },
+    "cardSixth": {
+      "title": "Trabajos de Construcción General",
+      "text": "Ofrecemos ejecución completa de proyectos de construcción, teniendo en cuenta todos los detalles."
+    },
     "infoButton": "Leer más"
   },
   "partners": {

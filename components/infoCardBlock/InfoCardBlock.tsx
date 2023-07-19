@@ -4,6 +4,12 @@ import styles from './InfoCardBlok.module.scss'
 import routes from '@/utils/routes'
 import { Locale } from '@/i18n-config'
 
+import homeGreen from '../../assets/icons/home-green.svg'
+import industry from '../../assets/icons/industry.svg'
+import anvil from '../../assets/icons/anvil.svg'
+import worker from '../../assets/icons/worker.svg'
+import window from '../../assets/icons/window.svg'
+
 type Props = {
   dictionary: any
   lang: Locale
@@ -13,43 +19,49 @@ export default function InfoCardBlock({ dictionary, lang }: Props) {
   const infoCardList = [
     {
       id: 1,
-      title: dictionary.infoCard.cardOne,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: homeGreen,
+      title: dictionary.infoCard.cardOne.title,
+      text: dictionary.infoCard.cardOne.text,
       link: routes.buildCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
       id: 2,
-      title: dictionary.infoCard.cardTwo,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: industry,
+      title: dictionary.infoCard.cardTwo.title,
+      text: dictionary.infoCard.cardTwo.text,
       link: routes.equipmentCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
       id: 3,
-      title: dictionary.infoCard.cardThree,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: anvil,
+      title: dictionary.infoCard.cardThree.title,
+      text: dictionary.infoCard.cardThree.text,
       link: routes.metalCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
       id: 4,
-      title: dictionary.infoCard.cardTwo,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: industry,
+      title: dictionary.infoCard.cardTwo.title,
+      text: dictionary.infoCard.cardTwo.text,
       link: routes.equipCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
       id: 5,
-      title: dictionary.infoCard.cardFifth,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: window,
+      title: dictionary.infoCard.cardFifth.title,
+      text: dictionary.infoCard.cardFifth.text,
       link: routes.windowCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
       id: 6,
-      title: dictionary.infoCard.cardSixth,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      icon: worker,
+      title: dictionary.infoCard.cardSixth.title,
+      text: dictionary.infoCard.cardSixth.text,
       link: routes.generalCard,
       buttonTitle: dictionary.infoCard.infoButton,
     },
@@ -61,6 +73,7 @@ export default function InfoCardBlock({ dictionary, lang }: Props) {
         <InfoCard
           key={card.id}
           title={card.title}
+          icon={card.icon}
           text={card.text}
           link={card.link}
           buttonText={card.buttonTitle}
