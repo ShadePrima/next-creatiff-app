@@ -71,7 +71,7 @@ export default function Furniture({ dictionary }: FurnitureProps) {
         src={image}
         alt='furniture'
         width={504}
-        height={714}
+        height={688}
       />
     </div>
   )
