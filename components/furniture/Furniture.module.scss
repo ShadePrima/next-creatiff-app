@@ -9,36 +9,42 @@
   align-items: start;
   gap: 16px;
   flex-wrap: wrap;
-
-  @media (max-width: 850px) {
-    justify-content: center;
-  }
-}
-
-.content {
-  max-width: 712px;
 }
 
 .title {
+  max-width: 712px;
+  min-height: 100px;
+
   @include title2;
   color: $color-black;
 }
 
+.content {
+  margin-top: 32px;
+  max-width: 608px;
+  min-height: 580px;
+}
+
 .text {
-  margin-top: $margin-32;
-  @include text4;
-  color: $font-color-dark;
+  color: rgba(21, 19, 42, 0.75);
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
 }
 
 .table {
-  margin-top: $margin-48;
+  margin-top: $margin-32;
+  padding-left: 24px;
   max-width: 650px;
+  min-height: 248px;
 
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 16px;
 
   @media (max-width: 700px) {
     justify-content: center;
@@ -46,19 +52,64 @@
 }
 
 .tableItem {
-  width: 308px;
+  max-width: 584px;
+  min-height: 72px;
 
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 16px;
 
-  p {
-    @include text1;
-    color: $font-color-dark;
+  img {
+    padding-top: 7px;
   }
 }
 
+.tableContainer {
+  margin-left: 16px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  h2 {
+    color: #15132a;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+
+    margin-bottom: 13px;
+  }
+
+  p {
+    color: rgba(21, 19, 42, 0.75);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+  }
+}
+
+.textBottom {
+  margin-top: 32px;
+
+  color: rgba(21, 19, 42, 0.75);
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 30px */
+}
+
 .button {
-  margin-top: 48px;
+  margin-top: 32px;
+}
+
+.image {
+  margin-top: 24px;
+  height: 714px;
+  width: 530px;
 }

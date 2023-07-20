@@ -15,36 +15,64 @@ type FurnitureProps = {
 
 export default function Furniture({ dictionary }: FurnitureProps) {
   const furnitureList = [
-    { id: 1, icon: lukas, text: dictionary.furniture.lukas },
-    { id: 2, icon: tool, text: dictionary.furniture.tool },
-    { id: 3, icon: heart, text: dictionary.furniture.heart },
-    { id: 4, icon: lukas, text: dictionary.furniture.lukas },
-    { id: 5, icon: tool, text: dictionary.furniture.tool },
-    { id: 6, icon: heart, text: dictionary.furniture.heart },
+    {
+      id: 1,
+      icon: tool,
+      title: dictionary.furniture.cardOne.title,
+      text: dictionary.furniture.cardOne.text,
+    },
+    {
+      id: 2,
+      icon: tool,
+      title: dictionary.furniture.cardTwo.title,
+      text: dictionary.furniture.cardTwo.text,
+    },
+    {
+      id: 3,
+      icon: tool,
+      title: dictionary.furniture.cardThree.title,
+      text: dictionary.furniture.cardThree.text,
+    },
   ]
 
   return (
     <div className={styles.root}>
-      <div className={styles.content}>
+      <div>
         <h1 className={styles.title}>
           {dictionary.furniture.titleLineOne} <br />
           {dictionary.furniture.titleLineTwo}
         </h1>
-        <p className={styles.text}>{dictionary.furniture.text}</p>
+        <div className={styles.content}>
+          <p className={styles.text}>{dictionary.furniture.text}</p>
 
-        <div className={styles.table}>
-          {furnitureList.map((item) => (
-            <div key={item.id} className={styles.tableItem}>
-              <Image src={item.icon} alt={item.text} />
-              <p>{item.text}</p>
-            </div>
-          ))}
-        </div>
-        <div className={styles.button}>
-          <FurnitureButton dictionary={dictionary} />
+          <div className={styles.table}>
+            {furnitureList.map((item) => (
+              <div key={item.id} className={styles.tableItem}>
+                <Image src={item.icon} alt={item.text} />
+                <div className={styles.tableContainer}>
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <p className={styles.textBottom}>
+            Довірте нам свої бажання, а ми перетворимо їх на реальність.
+            Ознайомтесь з нашим портфоліо!
+          </p>
+          <div className={styles.button}>
+            <FurnitureButton dictionary={dictionary} />
+          </div>
         </div>
       </div>
-      <Image src={image} alt='furniture' width={504} height={570} />
+      <Image
+        className={styles.image}
+        src={image}
+        alt='furniture'
+        width={504}
+        height={714}
+      />
     </div>
   )
 }

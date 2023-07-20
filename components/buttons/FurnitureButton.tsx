@@ -12,7 +12,7 @@ export default function FurnitureButton({ dictionary }: ButtonProps) {
     <Button
       onClick={scrollToForm}
       title={dictionary.furniture.button}
-      maxWidth={526}
+      maxWidth={608}
       minHeight={56}
     />
   )

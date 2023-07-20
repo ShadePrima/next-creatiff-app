@@ -67,10 +67,19 @@
   "furniture": {
     "titleLineOne": "We can recreate everything that",
     "titleLineTwo": "you only wish!",
-    "text": "Here will be a text about how we can make furniture to order, for example through pictures from Pinterest, taking into account all the wishes. A from below we will show our preferences, or something to choose from.",
-    "lukas": "Quality and guarantees",
-    "tool": "Our advantages",
-    "heart": "We do with love",
+    "text": "Whether you want your own home or office furniture, we are ready to fulfill your desires. Send us a picture from Pinterest, and we will send unique furniture to order, exactly taking into account your wishes and style.",
+    "cardOne": {
+      "title": "Individual Approach",
+      "text": "We listen to your needs and consider all your wishes."
+    },
+    "cardTwo": {
+      "title": "Creativity",
+      "text": "We combine and adapt concepts to create masterpieces."
+    },
+    "cardThree": {
+      "title": "Responsibility",
+      "text": "We adhere to the specified deadlines for our work."
+    },
     "button": "Contact us"
   },
   "contactForm": {

@@ -67,10 +67,19 @@
   "furniture": {
     "titleLineOne": "Podemos recrear todo lo que",
     "titleLineTwo": "usted solo desea!",
-    "text": "Aquí habrá un texto sobre cómo podemos hacer muebles a pedido, por ejemplo a través de imágenes de Pinterest, teniendo en cuenta todos los deseos. A desde abajo vamos a mostrar nuestras preferencias, o algo para elegir.",
-    "lukas": "Calidad y garantías",
-    "tool": "Nuestras ventajas",
-    "heart": "Lo hacemos con amor",
+    "text": "Si usted quiere su propio hogar o muebles de oficina, estamos listos para cumplir sus deseos. Envíenos una foto de Pinterest, y le enviaremos muebles únicos para ordenar, teniendo en cuenta sus deseos y estilo.",
+    "cardOne": {
+      "title": "Enfoque individual",
+      "text": "Escuchamos sus necesidades y tenemos en cuenta todos sus deseos."
+    },
+    "cardTwo": {
+      "title": "Creatividad",
+      "text": "Combinamos y adaptamos conceptos para crear obras maestras."
+    },
+    "cardThree": {
+      "title": "Responsabilidad",
+      "text": "Cumplimos con los plazos especificados para nuestro trabajo."
+    },
     "button": "Contáctenos"
   },
   "contactForm": {

@@ -22,7 +22,7 @@
 .text {
   margin-top: 12px;
   @include text5;
-  color: $color-black;
+  color: rgba(21, 19, 42, 0.75);
 }
 
 .button {

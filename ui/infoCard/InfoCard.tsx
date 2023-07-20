@@ -1,8 +1,6 @@
 import Image from 'next/image'
-
-import homeIcon from '../../assets/icons/home-green.svg'
-import styles from './InfoCard.module.scss'
 import Link from 'next/link'
+import styles from './InfoCard.module.scss'
 
 type Props = {
   title: string
