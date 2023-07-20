@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 import image from '../../assets/image/furniture-image.png'
 import lukas from '../../assets/icons/lukas-green.svg'
-import tool from '../../assets/icons/tools.svg'
+import tool from '../../assets/icons/tool-new.svg'
 import heart from '../../assets/icons/heart-green.svg'
 
 import FurnitureButton from '../buttons/FurnitureButton'
@@ -37,42 +37,30 @@ export default function Furniture({ dictionary }: FurnitureProps) {
 
   return (
     <div className={styles.root}>
-      <div>
-        <h1 className={styles.title}>
-          {dictionary.furniture.titleLineOne} <br />
-          {dictionary.furniture.titleLineTwo}
-        </h1>
-        <div className={styles.content}>
-          <p className={styles.text}>{dictionary.furniture.text}</p>
+      <div className={styles.content}>
+        <h1 className={styles.title}>{dictionary.furniture.title}</h1>
+        <div className={styles.contentContainer}>
+          <p className={styles.textTop}>{dictionary.furniture.text}</p>
 
-          <div className={styles.table}>
-            {furnitureList.map((item) => (
-              <div key={item.id} className={styles.tableItem}>
-                <Image src={item.icon} alt={item.text} />
-                <div className={styles.tableContainer}>
-                  <h2>{item.title}</h2>
-                  <p>{item.text}</p>
-                </div>
+          {furnitureList.map((item) => (
+            <div key={item.id} className={styles.contantItem}>
+              <Image src={tool} alt='icone' />
+              <div className={styles.contentItemText}>
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
 
-          <p className={styles.textBottom}>
-            Довірте нам свої бажання, а ми перетворимо їх на реальність.
-            Ознайомтесь з нашим портфоліо!
-          </p>
+          <p className={styles.textBottom}>{dictionary.furniture.textBottom}</p>
           <div className={styles.button}>
             <FurnitureButton dictionary={dictionary} />
           </div>
         </div>
       </div>
-      <Image
-        className={styles.image}
-        src={image}
-        alt='furniture'
-        width={504}
-        height={688}
-      />
+      <div className={styles.imageContainer}>
+        <Image className={styles.image} src={image} alt='image' width={504} />
+      </div>
     </div>
   )
 }

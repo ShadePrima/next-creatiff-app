@@ -65,8 +65,7 @@
     "button": "Our works"
   },
   "furniture": {
-    "titleLineOne": "We can recreate everything that",
-    "titleLineTwo": "you only wish!",
+    "title": "We can recreate everything that you only wish!",
     "text": "Whether you want your own home or office furniture, we are ready to fulfill your desires. Send us a picture from Pinterest, and we will send unique furniture to order, exactly taking into account your wishes and style.",
     "cardOne": {
       "title": "Individual Approach",
@@ -80,6 +79,7 @@
       "title": "Responsibility",
       "text": "We adhere to the specified deadlines for our work."
     },
+    "textBottom": "Trust us with your desires, and we will turn them into reality. Check out our portfolio!",
     "button": "Contact us"
   },
   "contactForm": {

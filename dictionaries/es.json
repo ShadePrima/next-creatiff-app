@@ -65,8 +65,7 @@
     "button": "Nuestras obras"
   },
   "furniture": {
-    "titleLineOne": "Podemos recrear todo lo que",
-    "titleLineTwo": "usted solo desea!",
+    "title": "Podemos recrear todo lo que usted solo desea!",
     "text": "Si usted quiere su propio hogar o muebles de oficina, estamos listos para cumplir sus deseos. Envíenos una foto de Pinterest, y le enviaremos muebles únicos para ordenar, teniendo en cuenta sus deseos y estilo.",
     "cardOne": {
       "title": "Enfoque individual",
@@ -80,6 +79,7 @@
       "title": "Responsabilidad",
       "text": "Cumplimos con los plazos especificados para nuestro trabajo."
     },
+    "textBottom": "Confía en nosotros con tus deseos, y los convertiremos en realidad. Echa un vistazo a nuestra cartera!",
     "button": "Contáctenos"
   },
   "contactForm": {
