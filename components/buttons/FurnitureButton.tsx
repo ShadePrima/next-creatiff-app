@@ -8,12 +8,5 @@ type ButtonProps = {
 }
 
 export default function FurnitureButton({ dictionary }: ButtonProps) {
-  return (
-    <Button
-      onClick={scrollToForm}
-      title={dictionary.furniture.button}
-      maxWidth={608}
-      minHeight={56}
-    />
-  )
+  return <Button onClick={scrollToForm} title={dictionary.furniture.button} />
 }
