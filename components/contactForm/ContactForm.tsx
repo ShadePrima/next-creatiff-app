@@ -68,7 +68,7 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
               title={dictionary.contactForm.email}
               symbol='*'
               type='email'
-              placeholder='ostapbender@gmail.com'
+              placeholder='email@example.com'
               value={form.email}
               onChange={handleInput}
             />

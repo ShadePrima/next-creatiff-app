@@ -13,6 +13,10 @@
 .title {
   @include text1;
   color: $color-white;
+
+  @media (max-width: 425px) {
+    text-align: center;
+  }
 }
 
 .contacts {
@@ -28,6 +32,7 @@
     flex-direction: column;
     justify-content: start;
     align-items: start;
+    align-content: center;
   }
 }
 

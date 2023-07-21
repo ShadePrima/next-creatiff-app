@@ -1,6 +1,5 @@
 import Image from 'next/image'
 
-import icon from '../../assets/icons/email.svg'
 import logo from '../../assets/icons/logo.svg'
 
 import styles from './Footer.module.scss'
