@@ -1,5 +1,4 @@
 import InfoCard from '@/ui/infoCard/InfoCard'
-import styles from './InfoCardBlok.module.scss'
 
 import routes from '@/utils/routes'
 import { Locale } from '@/i18n-config'
@@ -9,6 +8,8 @@ import industry from '../../assets/icons/industry.svg'
 import anvil from '../../assets/icons/anvil.svg'
 import worker from '../../assets/icons/worker.svg'
 import window from '../../assets/icons/window.svg'
+
+import styles from './InfoCardBlok.module.scss'
 
 type Props = {
   dictionary: any

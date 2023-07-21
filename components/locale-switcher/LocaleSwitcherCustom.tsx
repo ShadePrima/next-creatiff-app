@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from 'next/navigation'
 
-import styles from './LocaleSwitcherCustom.module.scss'
 import React from 'react'
 
 import verticalLineIcone from '../../assets/icons/vertical-line.svg'
@@ -15,6 +14,8 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 import Image from 'next/image'
+
+import styles from './LocaleSwitcherCustom.module.scss'
 
 const selectedList = [
   {
