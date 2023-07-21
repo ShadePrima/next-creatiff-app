@@ -8,12 +8,5 @@ type ButtonProps = {
 }
 
 export default function CompanyButton({ dictionary }: ButtonProps) {
-  return (
-    <Button
-      onClick={scrollToForm}
-      title={dictionary.company.button}
-      maxWidth={292}
-      minHeight={56}
-    />
-  )
+  return <Button onClick={scrollToForm} title={dictionary.company.button} />
 }

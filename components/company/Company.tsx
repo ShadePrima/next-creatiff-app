@@ -1,11 +1,9 @@
-import styles from './Company.module.scss'
-import useTranslation from 'next-translate/useTranslation'
-
 import Number from '@/ui/number/Number'
 
 import ChangeImage from '@/ui/changeImage/ChangeImage'
 import CompanyButton from '../buttons/CompanyButton'
-import LocaleSwitcher from '@/app/components/locale-switcher'
+
+import styles from './Company.module.scss'
 
 type Props = {
   dictionary: any
