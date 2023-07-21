@@ -85,7 +85,7 @@
   "contactForm": {
     "title": "¿Alguna pregunta? ESCRÍBENOS ",
     "name": "Tu Imme",
-    "namePlaceholder": "Ostap Bender",
+    "namePlaceholder": "Introduzca su nombre",
     "email": "Tu Correo",
     "tel": "Tu teléfono",
     "leter": "Tu carta",

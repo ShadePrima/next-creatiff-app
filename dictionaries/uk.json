@@ -85,7 +85,7 @@
   "contactForm": {
     "title": "ВИНИКЛИ ПИТАННЯ? НАПИШИ НАМ",
     "name": "Ваше Iм’я",
-    "namePlaceholder": "Остап Бендер",
+    "namePlaceholder": "Введіть ваше ім’я",
     "email": "Ваша Пошта",
     "tel": "Ваш Телефон",
     "leter": "Ваш лист",

@@ -1,12 +1,12 @@
 'use client'
 
 import React from 'react'
+import axios from 'axios'
 
 import Input from '@/ui/input/Input'
 import Button from '@/ui/button/Button'
 
 import styles from './ContactForm.module.scss'
-import axios from 'axios'
 
 type ContactFormProps = {
   dictionary: any
@@ -36,15 +36,11 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
     try {
       const token = '88e021c16c9e26ef55cdae66219a2f81a6665534'
 
-      const response = await axios.post(
-        'http://web:8000/feedback/',
-        form,
-        {
-          headers: {
-            Authorization: `Token ${token}`,
-          },
-        }
-      )
+      const response = await axios.post('http://web:8000/feedback/', form, {
+        headers: {
+          Authorization: `Token ${token}`,
+        },
+      })
     } catch (err) {
       console.log(err)
     }
@@ -59,7 +55,6 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
         <form onSubmit={handSubmit}>
           <div className={styles.inputBlock}>
             <Input
-              // id='name'
               name='name'
               title={dictionary.contactForm.name}
               symbol='*'
@@ -69,7 +64,6 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
               onChange={handleInput}
             />
             <Input
-              // id='email'
               name='email'
               title={dictionary.contactForm.email}
               symbol='*'
@@ -79,7 +73,6 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
               onChange={handleInput}
             />
             <Input
-              // id='tel'
               name='tel'
               title={dictionary.contactForm.tel}
               symbol=''
@@ -93,7 +86,6 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
           <div className={styles.textArea}>
             <h2>{dictionary.contactForm.leter}</h2>
             <textarea
-              // id='message'
               name='message'
               placeholder={dictionary.contactForm.leterPlaceholder}
               value={form.message}
@@ -101,12 +93,7 @@ export default function ContactForm({ dictionary }: ContactFormProps) {
             />
           </div>
           <div className={styles.button}>
-            <Button
-              type='submit'
-              title={dictionary.contactForm.button}
-              maxWidth={356}
-              minHeight={56}
-            />
+            <Button type='submit' title={dictionary.contactForm.button} />
           </div>
         </form>
       </div>

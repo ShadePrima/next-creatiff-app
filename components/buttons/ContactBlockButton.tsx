@@ -9,11 +9,6 @@ type Props = {
 
 export default function ContactBlockButton({ dictionary }: Props) {
   return (
-    <Button
-      onClick={scrollToForm}
-      title={dictionary.contactBlock.button}
-      maxWidth={399}
-      minHeight={56}
-    />
+    <Button onClick={scrollToForm} title={dictionary.contactBlock.button} />
   )
 }

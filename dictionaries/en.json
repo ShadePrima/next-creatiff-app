@@ -85,7 +85,7 @@
   "contactForm": {
     "title": "ANY QUESTIONS? WRITE TO US ",
     "name": "Your Name",
-    "namePlaceholder": "Ostap Bender",
+    "namePlaceholder": "Enter your name",
     "email": "Your Email",
     "tel": "Your Phone",
     "leter": "Your letter",
