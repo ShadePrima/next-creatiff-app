@@ -16,20 +16,24 @@
       "text": "Our talented professionals transform shipping containers into modern, environmentally friendly, and functional spaces."
     },
     "cardTwo": {
-      "title": "Industrial Equipment Sales",
-      "text": "We offer a wide range of high-quality equipment for various sectors of the industry."
+      "title": "General Construction Works",
+      "text": "We provide complete construction project execution, taking into account all the details."
     },
     "cardThree": {
       "title": "Metal Constructions Manufacturing",
       "text": "We have modern technologies and high-quality materials to create strong and reliable structures for your projects."
     },
+    "cardFourth": {
+      "title": "Industrial Equipment Sales",
+      "text": "We offer a wide range of high-quality equipment for various industrial sectors."
+    },
     "cardFifth": {
-      "title": "Windows and Doors",
-      "text": "We also specialize in selling windows and doors of various styles, designs, and materials to meet your unique customer requirements."
+      "title": "PVC, Roller Shutters",
+      "text": "We offer a wide range of high-quality equipment for various industrial sectors."
     },
     "cardSixth": {
-      "title": "General Construction Works",
-      "text": "We provide complete construction project execution, taking into account all the details."
+      "title": "Doors, Furniture, Home Goods",
+      "text": "We also specialize in selling windows and doors of various styles, designs, and materials."
     },
     "infoButton": "Read more"
   },
