@@ -4,7 +4,10 @@ import ContactForm from '@/components/contactForm/ContactForm'
 import Footer from '@/components/footer/Footer'
 import { getDictionary } from '@/get-dictionary'
 import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 import './globals.scss'
 
 export async function generateStaticParams() {

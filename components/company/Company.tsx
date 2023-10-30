@@ -1,8 +1,6 @@
 import Number from '@/ui/number/Number'
-
 import ChangeImage from '@/ui/changeImage/ChangeImage'
 import CompanyButton from '../buttons/CompanyButton'
-
 import styles from './Company.module.scss'
 
 type Props = {
@@ -22,10 +20,12 @@ export default function Company({ dictionary }: Props) {
         <div className={`${styles.contentRow} ${'flex-center'}`}>
           <div className={styles.contenText}>
             <h1 data-aos='fade-right'>
-              CREATIFF <br /> {dictionary['company'].title}
+              STAR CREATIFF <br /> {dictionary['company'].title}
             </h1>
 
             <p className={styles.text}>{dictionary.company.description}</p>
+            <p className={styles.text}>{dictionary.company.description_2}</p>
+
             <div className={styles.button}>
               <CompanyButton dictionary={dictionary} />
             </div>
