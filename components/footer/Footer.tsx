@@ -1,7 +1,5 @@
 import Image from 'next/image'
-
 import logo from '../../assets/icons/logo.svg'
-
 import styles from './Footer.module.scss'
 
 import { footerContactList } from '../../helpers/footerContactList'
