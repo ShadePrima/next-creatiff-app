@@ -1,14 +1,11 @@
 import { Locale, i18n } from '../../i18n-config'
-
-import './globals.scss'
-import { Inter } from 'next/font/google'
-
 import Header from '@/components/header/Header'
 import ContactForm from '@/components/contactForm/ContactForm'
 import Footer from '@/components/footer/Footer'
 import { getDictionary } from '@/get-dictionary'
-
+import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
+import './globals.scss'
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -21,7 +18,6 @@ export default async function RootLayout({
   children: React.ReactNode
   params: { lang: Locale }
 }) {
-  // const currentLang = params.lang
   const dictionary = await getDictionary(params.lang)
 
   return (

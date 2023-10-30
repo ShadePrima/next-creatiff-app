@@ -1,6 +1,6 @@
 @import '../../../styles/variables.module.scss';
 
-.image {
+.build__image {
   margin-top: $margin-72;
   display: flex;
   justify-content: center;
@@ -10,17 +10,17 @@
   }
 }
 
-.textBlock {
+.build__textBlock {
   max-width: 817px;
   margin: 0 auto;
 
-  h1 {
+  .build__title {
     margin-top: $margin-72;
     @include title2;
     color: $color-black;
   }
 
-  p {
+  .build__text {
     margin-top: $margin-32;
     @include text5;
     color: $font-color-dark;
@@ -38,4 +38,8 @@
     @include text5;
     color: $font-color-dark;
   }
+}
+
+.build__link {
+  padding-left: 4px;
 }

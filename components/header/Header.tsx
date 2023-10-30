@@ -1,14 +1,11 @@
 import Image from 'next/image'
-
-import styles from './Header.module.scss'
 import logo from '../../assets/icons/logo.svg'
 import email from '../../assets/icons/email.svg'
 import telephone from '../../assets/icons/telephone.svg'
-
 import { segoeScript } from '../../styles/fonts'
 import Link from 'next/link'
-import LocaleSwitcher from '@/app/components/locale-switcher'
 import LocaleSwitcherCustom from '../locale-switcher/LocaleSwitcherCustom'
+import styles from './Header.module.scss'
 
 export default function Header() {
   return (
@@ -24,9 +21,7 @@ export default function Header() {
                 width={104}
                 height={104}
               />
-              <h1 className={`${styles.logoText} ${segoeScript.className}`}>
-                Creatiff - realizamos ideas
-              </h1>
+              <h1 className={styles.logoText}>Creatiff - realizamos ideas</h1>
             </div>
           </Link>
 

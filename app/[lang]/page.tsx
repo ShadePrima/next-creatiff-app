@@ -1,16 +1,12 @@
 import React from 'react'
-
 import { getDictionary } from '../../get-dictionary'
 import { Locale } from '../../i18n-config'
-
 import Company from '@/components/company/Company'
 import InfoCardBlock from '@/components/infoCardBlock/InfoCardBlock'
-import Partners from '@/components/partners/Partners'
 import Services from '@/components/services/Services'
 import ContactBlock from '@/components/contactBlock/ContactBlock'
 import Furniture from '@/components/furniture/Furniture'
 import Gallery from '@/components/gallery/Gallery'
-
 import styles from './page.module.scss'
 
 type Props = {
