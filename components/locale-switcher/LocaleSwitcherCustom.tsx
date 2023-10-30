@@ -1,20 +1,14 @@
 'use client'
-
-import { usePathname, useRouter } from 'next/navigation'
-
 import React from 'react'
-
+import { usePathname, useRouter } from 'next/navigation'
 import verticalLineIcone from '../../assets/icons/vertical-line.svg'
 import globeIcone from '../../assets/icons/globe.svg'
 import arrowDownIcone from '../../assets/icons/arrow-down.svg'
 import checker from '../../assets/icons/checker.svg'
 import checkerSelected from '../../assets/icons/checker-selected.svg'
-
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-
 import Image from 'next/image'
-
 import styles from './LocaleSwitcherCustom.module.scss'
 
 const selectedList = [
