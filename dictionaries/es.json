@@ -114,5 +114,28 @@
       "link_six": "documentación equivalente a edificios inmuebles.",
       "paragraphSeven": "Te ofrecemos no solo una vivienda, completamente amueblada y lista para una vida feliz, te ofrecemos tiempo para comunicarte y mejorar, para viajar y amar, mientras nosotros nos encargamos de TU HOGAR."
     }
+  },
+  "equip": {
+    "title_1": "Venta de Equipos Industriales",
+    "text_1": "Nuestra empresa ofrece una amplia gama de equipos industriales de alta calidad que cumplen con los más altos estándares de calidad y confiabilidad. Entendemos que el equipo eficiente es la base del éxito para cualquier negocio, por lo que trabajamos para proporcionar a nuestros clientes las mejores soluciones.",
+    "text_2": "Nuestra gama incluye una variedad de productos para diferentes sectores industriales. Desde tecnologías de vanguardia para el procesamiento de metales y materias primas hasta sistemas de producción automatizados, estamos listos para satisfacer las necesidades incluso de los clientes más exigentes.",
+    "text_3": "Ofrecemos no solo equipos de alta calidad, sino también un enfoque individual para cada cliente. Nuestro equipo de expertos está listo para brindar consultas y asistencia en la elección de las soluciones óptimas para su negocio.",
+    "text_4": "Dé el primer paso para aumentar la productividad y eficiencia de su empresa. Contáctenos ahora y le ayudaremos a encontrar el equipo industrial perfecto para alcanzar su éxito.",
+    "waste_title": "Procesamiento de Residuos",
+    "waste_list": "Para el procesamiento de residuos, contamos con los siguientes tipos de equipos industriales:",
+    "waset_list_1": "extrusoras",
+    "waset_list_2": "trituradoras de plástico",
+    "waset_list_3": "granuladoras",
+    "waset_list_4": "prensas",
+    "meta_scraping_title": "Reciclaje de Metales",
+    "metal_scraping_title": "También nos dedicamos a la venta de equipos para el procesamiento de metales y contamos con lo siguiente:",
+    "meta_scraping_list_1": "cizallas",
+    "meta_scraping_list_2": "guillotinas",
+    "meta_scraping_list_3": "curvadoras de tubos",
+    "partners_title": "Sitios web de Nuestros Socios",
+    "partners_text": "Lista de socios:",
+    "partners_list_1": "xrido.com",
+    "partners_list_2": "sahinlermetal.com",
+    "partners_list_3": "accurl.com"
   }
 }

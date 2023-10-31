@@ -114,5 +114,28 @@
       "link_six": "documentation equivalent to immovable buildings.",
       "paragraphSeven": "We offer you not just a house, fully furnished and ready for a happy life, we offer you time for communication and self-improvement, for travel and love, while we will take care of YOUR HOME."
     }
+  },
+  "equip": {
+    "title_1": "Industrial Equipment Sales",
+    "text_1": "Our company offers a wide range of high-quality industrial equipment that meets the highest standards of quality and reliability. We understand that efficient equipment is the foundation of success for any business, so we work to provide our clients with the best solutions.",
+    "text_2": "Our range includes a variety of products for different industrial sectors. From cutting-edge metal and raw material processing technologies to automated production systems, we are ready to meet the needs of even the most demanding clients.",
+    "text_3": "We offer not only high-quality equipment but also an individual approach to each client. Our team of experts is ready to provide consultations and assistance in choosing the optimal solutions for your business.",
+    "text_4": "Take the first step to increase the productivity and efficiency of your enterprise. Contact us now, and we will help you find the perfect industrial equipment to achieve your success!",
+    "waste_title": "Waste Processing",
+    "waste_list": "For waste processing, we have the following types of industrial equipment:",
+    "waset_list_1": "extruders",
+    "waset_list_2": "plastic shredders",
+    "waset_list_3": "granulators",
+    "waset_list_4": "presses",
+    "meta_scraping_title": "Metal Scraping",
+    "metal_scraping_title": "We also engage in the sale of equipment for metal processing and have the following:",
+    "meta_scraping_list_1": "shears",
+    "meta_scraping_list_2": "guillotines",
+    "meta_scraping_list_3": "pipe benders",
+    "partners_title": "Websites of Our Partners",
+    "partners_text": "List of partners:",
+    "partners_list_1": "xrido.com",
+    "partners_list_2": "sahinlermetal.com",
+    "partners_list_3": "accurl.com"
   }
 }
