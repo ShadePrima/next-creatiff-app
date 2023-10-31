@@ -7,7 +7,6 @@ import metal_4 from '../../../assets/image/metal_4.png'
 import { Locale, i18n } from '@/i18n-config'
 import { getDictionary } from '@/get-dictionary'
 import styles from './page.module.scss'
-import Link from 'next/link'
 
 export const metadata = {
   title: 'Виготовлення будинків з морських контейнерів',
