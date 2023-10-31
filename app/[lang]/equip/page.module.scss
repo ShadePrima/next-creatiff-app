@@ -1,6 +1,6 @@
 @import '../../../styles/variables.module.scss';
 
-.build__image {
+.equip__image {
   margin-top: $margin-72;
   display: flex;
   justify-content: center;
@@ -10,36 +10,55 @@
   }
 }
 
-.build__textBlock {
+.equip__textBlock {
   max-width: 817px;
   margin: 0 auto;
 
-  .build__title {
+  .equip__title {
     margin-top: $margin-72;
     @include title2;
     color: $color-black;
   }
 
-  .build__text {
+  .equip__title_md {
+    margin-top: $margin-72;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  .equip__text {
     margin-top: $margin-32;
     @include text5;
     color: $font-color-dark;
   }
 
   ul {
-    margin-top: $margin-32;
     padding-left: 25px;
   }
 
   li {
-    margin-top: $margin-32;
     list-style: disc;
     padding-left: 10px;
     @include text5;
     color: $font-color-dark;
+
+    a {
+      color: $font-color-dark;
+    }
   }
 }
 
-.build__link {
+.equip__link {
   padding-left: 4px;
+}
+
+.equip__image_wrapper {
+  padding-top: $margin-72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }

@@ -1,14 +1,13 @@
 import Image from 'next/image'
 import equip from '../../../assets/image/equip.png'
-import image2 from '../../../assets/image/build-image-2.png'
-import image3 from '../../../assets/image/build-image-3.png'
-import image4 from '../../../assets/image/build-image-4.png'
+import equip_1 from '../../../assets/image/equip_1.png'
+import equip_2 from '../../../assets/image/equip_2.png'
+import equip_3 from '../../../assets/image/equip_3.png'
+import equip_4 from '../../../assets/image/equip_4.png'
 import { Locale, i18n } from '@/i18n-config'
 import { getDictionary } from '@/get-dictionary'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
-import Link from 'next/link'
 import styles from './page.module.scss'
+import Link from 'next/link'
 
 export const metadata = {
   title: 'Виготовлення будинків з морських контейнерів',
@@ -27,73 +26,79 @@ export default async function Equip({ params }: BuildProps) {
   const dictionary = await getDictionary(params.lang)
 
   return (
-    <section className={styles.build}>
+    <section className={styles.equip}>
       <div className='container'>
-        <div className={styles.build__image}>
+        <div className={styles.equip__image}>
           <Image src={equip} width={800} height={600} alt='build' />
         </div>
-        <div className={styles.build__textBlock}>
-          <h1 className={`${styles.build__title} ${inter.className}`}>
-            {dictionary.build.sectionOne.titleOne}
-          </h1>
+        <div className={styles.equip__textBlock}>
+          <h1 className={styles.equip__title}>{dictionary.equip.title_1}</h1>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphOne}
+          <p className={styles.equip__text}>{dictionary.equip.text_1}</p>
+          <p className={styles.equip__text}>{dictionary.equip.text_2}</p>
+          <p className={styles.equip__text}>{dictionary.equip.text_3}</p>
+          <p className={styles.equip__text}>{dictionary.equip.text_4}</p>
+
+          <h2 className={styles.equip__title_md}>
+            {dictionary.equip.waste_title}
+          </h2>
+
+          <p className={styles.equip__text}>{dictionary.equip.waste_list}</p>
+
+          <ul>
+            <li>{dictionary.equip.waset_list_1}</li>
+            <li>{dictionary.equip.waset_list_2}</li>
+            <li>{dictionary.equip.waset_list_3}</li>
+            <li>{dictionary.equip.waset_list_4}</li>
+          </ul>
+
+          <div className={styles.equip__image_wrapper}>
+            <Image src={equip_1} width={400} height={300} alt={'equip'} />
+            <Image src={equip_2} width={400} height={300} alt={'equip'} />
+          </div>
+
+          <h2 className={styles.equip__title_md}>
+            {dictionary.equip.metal_scraping_title}
+          </h2>
+
+          <p className={styles.equip__text}>
+            {dictionary.equip.metal_scraping_text}
           </p>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphTwo}
-          </p>
+          <ul>
+            <li>{dictionary.equip.meta_scraping_list_1}</li>
+            <li>{dictionary.equip.meta_scraping_list_2}</li>
+            <li>{dictionary.equip.meta_scraping_list_3}</li>
+          </ul>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphThree}
-          </p>
+          <div className={styles.equip__image_wrapper}>
+            <Image src={equip_3} width={400} height={300} alt={'equip'} />
+            <Image src={equip_4} width={400} height={300} alt={'equip'} />
+          </div>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphFour}
-          </p>
+          <h2 className={styles.equip__title_md}>
+            {dictionary.equip.partners_title}
+          </h2>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphFive_1}
-            <Link
-              className={`${styles.build__link} ${'link'}`}
-              target='_blank'
-              href={
-                'https://www.casasprefabricadas.mobi/normativa-y-legislacion-sobre-las-casas-prefabricadas-en-espana/?fbclid=IwAR24v0ohZYCW-RgI5cn_A2KQXg89kM0zzULslVYxo262VFbApB2X2x8d1A8'
-              }
-            >
-              {dictionary.build.sectionOne.link_five}
-            </Link>
-            {dictionary.build.sectionOne.paragraphFive_2}
-          </p>
+          <p className={styles.equip__text}>{dictionary.equip.partners_text}</p>
 
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphSix}
-            <Link
-              className={`${styles.build__link} ${'link'}`}
-              target='_blank'
-              href={
-                'http://www.casasprefabricadas24.com/quiero-una-casa-prefabricada-que-documentacion-necesito/?fbclid=IwAR1SfsD7dq1OXswkpW9eFi8WQqC_VmWGDDq28s0w9cFbe1qHITxQolCJ040'
-              }
-            >
-              {dictionary.build.sectionOne.link_six}
-            </Link>
-          </p>
-
-          <p className={styles.build__text}>
-            {dictionary.build.sectionOne.paragraphSeven}
-          </p>
-        </div>
-        <div className={styles.build__image}>
-          <Image src={image2} alt='build' />
-        </div>
-
-        <div className={styles.build__image}>
-          <Image src={image3} alt='build' />
-        </div>
-
-        <div className={styles.build__image}>
-          <Image src={image4} alt='build' />
+          <ul>
+            <li>
+              <Link href={'https://www.xrido.com'} target='_blank'>
+                {dictionary.equip.partners_list_1}
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://www.sahinlermetal.com'} target='_blank'>
+                {dictionary.equip.partners_list_2}
+              </Link>
+            </li>
+            <li>
+              <Link href={'https://www.accurl.com'} target='_blank'>
+                {dictionary.equip.partners_list_3}
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
