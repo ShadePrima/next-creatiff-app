@@ -5,8 +5,6 @@ import image3 from '../../../assets/image/build-image-3.png'
 import image4 from '../../../assets/image/build-image-4.png'
 import { Locale, i18n } from '@/i18n-config'
 import { getDictionary } from '@/get-dictionary'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
 import Link from 'next/link'
 import styles from './page.module.scss'
 
@@ -33,7 +31,7 @@ export default async function Build({ params }: BuildProps) {
           <Image src={image1} width={800} height={600} alt='build' />
         </div>
         <div className={styles.build__textBlock}>
-          <h1 className={`${styles.build__title} ${inter.className}`}>
+          <h1 className={styles.build__title}>
             {dictionary.build.sectionOne.titleOne}
           </h1>
 
