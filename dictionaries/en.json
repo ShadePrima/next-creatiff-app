@@ -137,5 +137,19 @@
     "partners_list_1": "xrido.com",
     "partners_list_2": "sahinlermetal.com",
     "partners_list_3": "accurl.com"
+  },
+  "metal": {
+    "metal_title": "Metal Construction Manufacturing",
+    "metal_text_1": "We understand that metal constructions are an integral part of many projects, and we are ready to bring your ideas to life.",
+    "metal_text_2": "Our manufacturing is equipped with modern technologies and qualified personnel, allowing us to create metal constructions of any complexity and size. We specialize in individual approaches to each client, regardless of the scope of work.",
+    "metal_list_text": "We produce the following types of metal constructions:",
+    "metal_list_1": "fences",
+    "metal_list_2": "gates",
+    "metal_list_3": "grilles",
+    "metal_list_4": "canopies",
+    "metal_list_5": "decorative items",
+    "metal_text_3": "We can also create any metal construction according to your preferences by sending us photos from Pinterest.",
+    "metal_title_2": "In-House Powder Coating Chamber",
+    "metal_text_4": "We also have our own powder coating chamber that helps us bring your ideas to life."
   }
 }

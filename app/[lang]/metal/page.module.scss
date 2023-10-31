@@ -1,6 +1,6 @@
 @import '../../../styles/variables.module.scss';
 
-.image {
+.metal_image {
   margin-top: $margin-72;
   display: flex;
   justify-content: center;
@@ -10,32 +10,55 @@
   }
 }
 
-.textBlock {
+.metal_textBlock {
   max-width: 817px;
   margin: 0 auto;
 
-  h1 {
+  .metal_title {
     margin-top: $margin-72;
     @include title2;
     color: $color-black;
   }
 
-  p {
+  .metal_title_md {
+    margin-top: $margin-72;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    color: $color-black;
+  }
+
+  .metal_text {
     margin-top: $margin-32;
     @include text5;
     color: $font-color-dark;
   }
 
   ul {
-    margin-top: $margin-32;
     padding-left: 25px;
   }
 
   li {
-    margin-top: $margin-32;
     list-style: disc;
     padding-left: 10px;
     @include text5;
     color: $font-color-dark;
+
+    a {
+      color: $font-color-dark;
+    }
   }
+}
+
+.metal_link {
+  padding-left: 4px;
+}
+
+.metal_image_wrapper {
+  padding-top: $margin-72;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
 }
