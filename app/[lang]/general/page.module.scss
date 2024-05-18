@@ -32,6 +32,14 @@
   color: rgba(21, 19, 42, 0.75);
 }
 
+.general__text_p16 {
+    padding-top: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  color: rgba(21, 19, 42, 0.75);
+}
+
 .general__list {
   padding-left: 18px;
   font-size: 16px;
@@ -77,6 +85,23 @@
   padding-top: 16px;
 }
 
+.general__image_row {
+  padding-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.general__choose_image_three {
+  padding-top: 16px;
+}
+
+.general__choose_image_four {
+  padding-top: 72px;
+}
+
 @media (min-width: 600px) {
     .general__certificates {
       justify-content: space-between;
@@ -85,4 +110,7 @@
     .general__window_wrapper {
       flex-wrap: nowrap;
   }
+    .general__image_row {
+      flex-wrap: nowrap;
+    }
 }

@@ -7,8 +7,13 @@ import certificate3 from '@/assets/image/general-3.png'
 import certificate4 from '@/assets/image/general-4.png'
 import window1 from '@/assets/image/general-window-1.png'
 import window2 from '@/assets/image/general-window-2.png'
+import chooseImg1 from '@/assets/image/choose-1.png'
+import chooseImg2 from '@/assets/image/choose-2.png'
+import chooseImg3 from '@/assets/image/choose-3.png'
+import chooseImg4 from '@/assets/image/choose-4.png'
 import styles from './page.module.scss'
 import Image from 'next/image'
+import GeneralSliderColors from './general-slider-colors'
 
 export const metadata = {
   title: 'Загальнобудівельні види робіт',
@@ -59,7 +64,7 @@ export default async function General({ params }: EquipmentProps) {
           </div>
           <div className={styles.general__window_wrapper}>
             <div className={styles.general__window_img_wrapper}>
-              <Image src={window1} width={295} height={295} alt='window one' />
+              <Image src={window2} width={295} height={295} alt='window one' />
               <p className={styles.general__text} style={{textAlign: "center"}}>MegaLine 600</p>
             </div>
             <ol className={cl(styles.general__text, styles.general__window_list)} style={{ listStyleType: 'disc' }}>
@@ -72,6 +77,20 @@ export default async function General({ params }: EquipmentProps) {
               <li className={styles.general__window_list_item}>{dictionary.general.window_list_two_7}</li>
             </ol>
           </div>
+
+          <h2 className={styles.general__title}>{dictionary.general.choose_title}</h2>
+          <p className={styles.general__text}>{dictionary.general.choose_text_1}</p>
+          <div className={styles.general__image_row}>
+            <Image src={chooseImg1} width={400} height={300} alt='image one' />
+            <Image src={chooseImg2} width={400} height={300} alt='image one' />
+          </div>
+          <Image className={styles.general__choose_image_three} src={chooseImg3} width={816} height={472} alt='image three' />
+          <p className={styles.general__text}>{dictionary.general.choose_text_2}</p>
+          <GeneralSliderColors dictionary={dictionary} />
+          <Image className={styles.general__choose_image_four} src={chooseImg4} width={816} height={544} alt='image 4'/>
+          <p className={styles.general__text} >{dictionary.general.choose_text_3}</p>
+          <p className={styles.general__text_p16} >{dictionary.general.choose_text_4}</p>
+          <p className={styles.general__text_p16} >{dictionary.general.choose_text_5}</p>
         </div>
     </section>
   )
