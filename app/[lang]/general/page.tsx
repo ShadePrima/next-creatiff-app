@@ -81,13 +81,13 @@ export default async function General({ params }: EquipmentProps) {
           <h2 className={styles.general__title}>{dictionary.general.choose_title}</h2>
           <p className={styles.general__text}>{dictionary.general.choose_text_1}</p>
           <div className={styles.general__image_row}>
-            <Image src={chooseImg1} width={380} height={300} alt='image one' />
-            <Image src={chooseImg2} width={380} height={300} alt='image one' />
+            <Image className={styles.general__image} src={chooseImg1} width={380} height={300} alt='image one' />
+            <Image className={styles.general__image} src={chooseImg2} width={380} height={300} alt='image one' />
           </div>
-          <Image className={styles.general__choose_image_three} src={chooseImg3} width={816} height={472} alt='image three' />
+          <Image className={cl(styles.general__choose_image_three, styles.general__image)} src={chooseImg3} width={816} height={472} alt='image three' />
           <p className={styles.general__text}>{dictionary.general.choose_text_2}</p>
           <GeneralSliderColors dictionary={dictionary} />
-          <Image className={styles.general__choose_image_four} src={chooseImg4} width={816} height={544} alt='image 4'/>
+          <Image className={cl(styles.general__choose_image_four, styles.general__image)} src={chooseImg4} width={816} height={544} alt='image 4'/>
           <p className={styles.general__text} >{dictionary.general.choose_text_3}</p>
           <p className={styles.general__text_p16} >{dictionary.general.choose_text_4}</p>
           <p className={styles.general__text_p16} >{dictionary.general.choose_text_5}</p>

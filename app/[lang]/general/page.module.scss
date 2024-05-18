@@ -102,6 +102,10 @@
   padding-top: 72px;
 }
 
+.general__image {
+  border-radius: 4px;
+}
+
 @media (min-width: 600px) {
     .general__certificates {
       justify-content: space-between;
