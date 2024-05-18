@@ -4,6 +4,7 @@
   max-width: 817px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .image {
@@ -47,8 +48,41 @@
 .general__certificates {
   padding-top: 32px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
+}
+
+.general__window_wrapper {
+  padding-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 64px;
+  flex-wrap: wrap;
+}
+
+.general__window_img_wrapper {
+  max-width: 295px;
+  width: 100%;
+}
+
+.general__window_list {
+  padding-top: 0;
+  padding-left: 12px;
+}
+
+.general__window_list_item {
+  padding-top: 16px;
+}
+
+@media (min-width: 600px) {
+    .general__certificates {
+      justify-content: space-between;
+      gap: 0;
+  }
+    .general__window_wrapper {
+      flex-wrap: nowrap;
+  }
 }
