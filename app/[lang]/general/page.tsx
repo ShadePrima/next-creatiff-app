@@ -81,8 +81,8 @@ export default async function General({ params }: EquipmentProps) {
           <h2 className={styles.general__title}>{dictionary.general.choose_title}</h2>
           <p className={styles.general__text}>{dictionary.general.choose_text_1}</p>
           <div className={styles.general__image_row}>
-            <Image src={chooseImg1} width={400} height={300} alt='image one' />
-            <Image src={chooseImg2} width={400} height={300} alt='image one' />
+            <Image src={chooseImg1} width={380} height={300} alt='image one' />
+            <Image src={chooseImg2} width={380} height={300} alt='image one' />
           </div>
           <Image className={styles.general__choose_image_three} src={chooseImg3} width={816} height={472} alt='image three' />
           <p className={styles.general__text}>{dictionary.general.choose_text_2}</p>
