@@ -13,10 +13,12 @@ import chooseImg3 from '@/assets/image/choose-3.png'
 import chooseImg4 from '@/assets/image/choose-4.png'
 import findImage1 from '@/assets/image/find-image-1.png'
 import findImage2 from '@/assets/image/find-image-2.png'
+import findImage3 from '@/assets/image/find-image-3.png'
+import findImage4 from '@/assets/image/find-image-4.png'
+import findImage5 from '@/assets/image/find-image-5.png'
 import styles from './page.module.scss'
 import Image from 'next/image'
 import GeneralSliderColors from './general-slider-colors'
-import { transcode } from 'buffer'
 import GeneralSliderPorchOne from './general-slider-porch-1'
 import GeneralSliderPorchTwo from './general-slider-porch-2'
 
@@ -106,6 +108,18 @@ export default async function General({ params }: EquipmentProps) {
           </div>
           <GeneralSliderPorchOne dictionary={dictionary}/>
           <GeneralSliderPorchTwo dictionary={dictionary} />
+          
+          <h3 className={styles.general__title_sm}>{dictionary.general.find_title_sm_2}</h3>
+          <p className={styles.general__text} >{dictionary.general.find_text_2}</p>
+          <Image style={{paddingTop: "32px"}} className={styles.general__image} src={findImage3} width={400} height={400} alt='fins image 3' />
+
+          <h3 className={styles.general__title_sm}>{dictionary.general.find_title_sm_3}</h3>
+          <p className={styles.general__text} >{dictionary.general.find_text_3}</p>
+          <Image style={{paddingTop: "32px"}} className={styles.general__image} src={findImage4} width={816} height={502} alt='fins image 3' />
+
+          <h3 className={styles.general__title_sm}>{dictionary.general.find_title_sm_4}</h3>
+          <p className={styles.general__text} >{dictionary.general.find_text_4}</p>
+          <Image style={{paddingTop: "32px"}} className={styles.general__image} src={findImage5} width={816} height={502} alt='fins image 3' />
         </div>
     </section>
   )

@@ -16,7 +16,7 @@
 .general_slider_colors__buttons {
     max-width: 96px;
     width: 100%;
-    display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     gap: 8px;
@@ -37,4 +37,10 @@
     font-size: 40px;
     font-weight: 700;
     color: rgb(21, 19, 42);
+}
+
+@media (min-width: 600px) {
+    .general_slider_colors__buttons {
+        display: flex;
+    }
 }
