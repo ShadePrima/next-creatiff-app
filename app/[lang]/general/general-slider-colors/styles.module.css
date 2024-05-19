@@ -34,7 +34,13 @@
 }
 
 .general__title { 
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 700;
     color: rgb(21, 19, 42);
+}
+
+@media (min-width: 600px) {
+    .general__title { 
+        font-size: 40px;
+    }
 }

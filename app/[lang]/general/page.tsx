@@ -7,6 +7,7 @@ import certificate3 from '@/assets/image/general-3.png'
 import certificate4 from '@/assets/image/general-4.png'
 import window1 from '@/assets/image/general-window-1.png'
 import window2 from '@/assets/image/general-window-2.png'
+import window3 from '@/assets/image/general-window-3.png'
 import chooseImg1 from '@/assets/image/choose-1.png'
 import chooseImg2 from '@/assets/image/choose-2.png'
 import chooseImg3 from '@/assets/image/choose-3.png'
@@ -120,6 +121,28 @@ export default async function General({ params }: EquipmentProps) {
           <h3 className={styles.general__title_sm}>{dictionary.general.find_title_sm_4}</h3>
           <p className={styles.general__text} >{dictionary.general.find_text_4}</p>
           <Image style={{paddingTop: "32px"}} className={styles.general__image} src={findImage5} width={816} height={502} alt='fins image 3' />
+        
+        <h2 className={styles.general__title}>{dictionary.general.home_title}</h2>
+        <p className={styles.general__text} >{dictionary.general.home_text_1}</p>
+        <div className={styles.general__window_wrapper}>
+            <div className={styles.general__window_img_wrapper}>
+              <Image src={window3} width={295} height={295} alt='window one' />
+              <p className={cl(styles.general__text, styles.home__text_image)} style={{textAlign: "center"}}>Fenster 500</p>
+            </div>
+            <ol className={cl(styles.general__text, styles.general__window_list)} style={{ listStyleType: 'disc' }}>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_1}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_2}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_3}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_4}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_5}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_6}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_7}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_8}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_9}</li>
+              <li className={styles.general_home_list_item}>{dictionary.general.home_list_10}</li>
+            </ol>
+          </div>
+            <p className={styles.general__text} >{dictionary.general.home_text_2}</p>
         </div>
     </section>
   )
