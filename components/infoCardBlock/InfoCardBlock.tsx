@@ -6,8 +6,8 @@ import industry from '../../assets/icons/industry.svg'
 import anvil from '../../assets/icons/anvil.svg'
 import worker from '../../assets/icons/worker.svg'
 import window from '../../assets/icons/window.svg'
-import blind from '@/assets/icons/Blind.svg'
-import radiator from '@/assets/icons/Radiator.svg'
+import blind from '@/assets/icons/blind.svg'
+import radiator from '@/assets/icons/radiator.svg'
 import styles from './InfoCardBlok.module.scss'
 
 type Props = {
