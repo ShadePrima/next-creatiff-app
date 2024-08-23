@@ -18,7 +18,7 @@ export default async function Home({ params: { lang } }: Props) {
 
   if (!dictionary) {
     return (
-      <section className={styles.build}>
+      <section>
         <div className='container'>
           <p>Dictionary not found. Please check the locale or try again later.</p>
         </div>

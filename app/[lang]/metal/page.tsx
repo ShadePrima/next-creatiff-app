@@ -23,6 +23,15 @@ type BuildProps = {
 
 export default async function Metal({ params }: BuildProps) {
   const dictionary = await getDictionary(params.lang)
+  if (!dictionary) {
+    return (
+      <section>
+        <div className='container'>
+          <p>Dictionary not found. Please check the locale or try again later.</p>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section className={styles.metal}>

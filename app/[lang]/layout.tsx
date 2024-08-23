@@ -23,6 +23,16 @@ export default async function RootLayout({
 }) {
   const dictionary = await getDictionary(params.lang)
 
+  if (!dictionary) {
+    return (
+      <section>
+        <div className='container'>
+          <p>Dictionary not found. Please check the locale or try again later.</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <html lang={params.lang}>
       <body className={inter.className}>

@@ -38,6 +38,15 @@ type EquipmentProps = {
 
 export default async function General({ params }: EquipmentProps) {
   const dictionary = await getDictionary(params.lang)
+  if (!dictionary) {
+    return (
+      <section>
+        <div className='container'>
+          <p>Dictionary not found. Please check the locale or try again later.</p>
+        </div>
+      </section>
+    );
+  }
   return (
     <section className={styles.general}>
         <div className={styles.general__wrapper}>
