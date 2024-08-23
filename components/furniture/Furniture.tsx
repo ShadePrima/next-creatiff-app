@@ -14,6 +14,9 @@ type FurnitureProps = {
 }
 
 export default function Furniture({ dictionary }: FurnitureProps) {
+  if (!dictionary?.contactBlock) {
+    return null; 
+  }
   const furnitureList = [
     {
       id: 1,

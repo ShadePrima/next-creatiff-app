@@ -13,12 +13,17 @@ type ContactFormProps = {
 }
 
 export default function ContactForm({ dictionary }: ContactFormProps) {
+  
   const [form, setForm] = React.useState<any>({
     name: '',
     email: '',
     tel: '',
     message: '',
   })
+
+  if (!dictionary) {
+    return null; 
+  }
 
   const handleInput = (event: any) => {
     const { target } = event

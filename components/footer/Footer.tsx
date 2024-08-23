@@ -9,6 +9,10 @@ type FooterProps = {
 }
 
 export default function Footer({ dictionary }: FooterProps) {
+  if (!dictionary || !dictionary.footer) {
+    return null;  
+  }
+
   return (
     <div className={styles.root}>
       <div className={styles.wrapper}>

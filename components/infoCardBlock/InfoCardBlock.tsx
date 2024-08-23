@@ -6,6 +6,8 @@ import industry from '../../assets/icons/industry.svg'
 import anvil from '../../assets/icons/anvil.svg'
 import worker from '../../assets/icons/worker.svg'
 import window from '../../assets/icons/window.svg'
+import blind from '@/assets/icons/Blind.svg'
+import radiator from '@/assets/icons/Radiator.svg'
 import styles from './InfoCardBlok.module.scss'
 
 type Props = {
@@ -13,7 +15,11 @@ type Props = {
   lang: Locale
 }
 
-export default function InfoCardBlock({ dictionary, lang }: Props) {
+export default function InfoCardBlock({ dictionary }: Props) {
+  if (!dictionary) {
+    return null; 
+  }
+  
   const infoCardList = [
     {
       id: 1,
@@ -41,7 +47,7 @@ export default function InfoCardBlock({ dictionary, lang }: Props) {
     },
     {
       id: 4,
-      icon: industry,
+      icon: blind,
       title: dictionary.infoCard.cardFourth.title,
       text: dictionary.infoCard.cardFourth.text,
       link: routes.equipCard,
@@ -57,7 +63,7 @@ export default function InfoCardBlock({ dictionary, lang }: Props) {
     },
     {
       id: 6,
-      icon: window,
+      icon: radiator,
       title: dictionary.infoCard.cardSixth.title,
       text: dictionary.infoCard.cardSixth.text,
       link: routes.generalCard,

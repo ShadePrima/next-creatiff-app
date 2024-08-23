@@ -7,6 +7,9 @@ type GalleryProps = {
 }
 
 export default function Gallery({ dictionary }: GalleryProps) {
+  if (!dictionary?.contactBlock) {
+    return null; 
+  }
   const galleryList = [
     { id: 1, title: dictionary.gallery.button },
     { id: 2, title: dictionary.gallery.button },

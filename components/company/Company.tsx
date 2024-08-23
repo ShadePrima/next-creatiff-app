@@ -8,11 +8,18 @@ type Props = {
 }
 
 export default function Company({ dictionary }: Props) {
+
+ 
+  if (!dictionary?.number) {
+    return null; 
+  }
+
   const numberList = [
     { id: 1, title: '9k', text: dictionary.number.cardOne },
     { id: 2, title: '2k', text: dictionary.number.cardTwo },
     { id: 3, title: '28', text: dictionary.number.cardThree },
   ]
+  console.log('dictionary', dictionary)
 
   return (
     <section className={styles.root}>

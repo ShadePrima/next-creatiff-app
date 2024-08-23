@@ -10,6 +10,9 @@ type ServicesProps = {
 }
 
 export default function Services({ dictionary }: ServicesProps) {
+  if (!dictionary?.contactBlock) {
+    return null; 
+  }
   return (
     <section className={styles.root}>
       <Image src={image} alt='Kitchen' width={465} height={674} />

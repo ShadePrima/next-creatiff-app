@@ -7,6 +7,9 @@ type ContactBlockProps = {
 }
 
 export default function ContactBlock({ dictionary }: ContactBlockProps) {
+  if (!dictionary?.contactBlock) {
+    return null; 
+  }
   return (
     <section className={styles.root}>
       <div className='container'>
