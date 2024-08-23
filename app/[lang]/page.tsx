@@ -16,6 +16,16 @@ type Props = {
 export default async function Home({ params: { lang } }: Props) {
   const dictionary = await getDictionary(lang)
 
+  if (!dictionary) {
+    return (
+      <section className={styles.build}>
+        <div className='container'>
+          <p>Dictionary not found. Please check the locale or try again later.</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <main className={styles.root}>
       <Company dictionary={dictionary} />
