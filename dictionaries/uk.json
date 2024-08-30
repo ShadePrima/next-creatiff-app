@@ -101,19 +101,24 @@
     "title": "Зворотній зв’язок"
   },
   "build": {
-    "sectionOne": {
-      "titleOne": "Виготовлення будинків з морських контейнерів",
-      "paragraphOne": "Представляємо вашій увазі ідею повноцінного автономного модульного будинку із морських контейнерів.",
-      "paragraphTwo": "Після пандемії COVID-19 багато людей думали, що збираємо будинок подалі від міської галасливості буде чудовим варіантом для проживання або відпустки.",
-      "paragraphThree": "Попит на цей тип житла, який здобув популярність в США та Канаді, зрос в Іспанії в останні роки.",
-      "paragraphFour": "Виробництво будинків із морських контейнерів було обране через те, що конструкція морського контейнера спочатку є міцною та перевіреною, що надає можливість модульної збірки, поверхні та ефективного транспортування до місця установки. Всі модулі виготовляються на виробництві і потребують незначних робіт для установки. За допомогою модульного проектування ви можете самостійно спланувати будинок своєї мрії та забезпечити автономне існування без підключення до комунікацій. Наш будинок можна не лише встановити, але і швидко перенести в інше місце, оскільки з'єднання модулів виконується гвинтовим способом. Будинок добре ізольований, оснащений системами життєдіяльності. В ньому комфортно взимку і влітку, а система вентильованого фасаду власного виробництва та якісні вікна додадуть індивідуальності Вашому будинку.",
-      "paragraphFive_1": "Модульний будинок можна встановити на тих землях, на яких неможливо побудувати капітальний будинок, а також на орендованих землях. Зазвичай земля повинна бути міською (terreno urbano), але для розміщення їх в сільських районах (rústicas) останнє слово буде за кожною Comunidad Autónoma, компетентним органом управління незахопленими землями. Всі процедури для цих типів житла супроводжують витрати, які у разі мобільних будинків будуть нижчими. Дозвіл на будівництво не знадобиться, але знадобиться",
-      "link_five": "певна документація ",
-      "paragraphFive_2": "така як licencia urbanística, за яку потрібно сплатити збір у розмірі від 0,5% до 2% від вашого бюджету на будинок.",
-      "paragraphSix": "Мобільні будинки звільнені від процедури легалізації їх експлуатації (сертифікат придатності для проживання (cédula de habitabilidad) з оплатою податку, який залежить від кожної Comunidad Autónoma, ліцензії licencia de primera ocupación, якою адміністрація сертифікує, що будинок відповідає проекту, з оплатою відповідного податку, якщо ви не хочете задекларувати витрати. У цьому випадку потрібно отримати",
-      "link_six": "документацію, еквівалентну нерухомим будинкам.",
-      "paragraphSeven": "Ми пропонуємо вам не просто будинок, повністю мебльований і готовий до щасливого життя, ми пропонуємо вам час для спілкування та самосаморозвитку, подорожей та кохання, а ми поки що займемося ВАШИМ БУДИНКОМ."
-    }
+    "title_main": "Construcción, obras y reformas integrales",
+    "text_1": "La casa de sus sueños es nuestra misión.",
+    "text_2": "Con nuestra empresa, Creatiff Star, convertimos la construcción en un arte. Con nosotros, no sólo obtendrá paredes y un tejado, sino un espacio vital completo diseñado teniendo en cuenta sus deseos y necesidades.",
+    "title_list_1": "¿Por qué elegirnos?",
+    "text_list_1_1": "Gama completa de servicios",
+    "text_list_1_2": "Enfoque individual",
+    "text_list_1_3": "Tecnologías modernas",
+    "text_list_1_4": "Transparencia y control",
+    "text_list_1_5": "Puntualidad",
+    "title_list_2": "Nuestros servicios incluyen:",
+    "text_list_2_1": "Propuestas de diseño",
+    "text_list_2_2": "Desarrollo, aprobación y apoyo del proyecto",
+    "text_list_2_3": "Una gama completa de obras de construcción desde la base hasta «llave en mano»",
+    "text_list_2_4": "Sistemas de ingeniería",
+    "text_list_2_5": "Diseño paisajístico",
+    "text_3": "Star Creatiff no se limita a construir, sino que crea la casa de sus sueños desde cero. No sólo construimos edificios, construimos confort y confianza.",
+    "text_4": "Estamos orgullosos de nuestro equipo de profesionales que son la base de nuestro éxito y de su satisfacción. Nuestro equipo es una simbiosis de experiencia, conocimientos y enfoque creativo para cada proyecto.",
+    "text_5": "No sólo nos dedicamos a la construcción de edificios residenciales, ¡también trabajamos con hoteles, restaurantes, hostales y locales industriales!"
   },
   "equip": {
     "title_1": "Продаж промислового обладнання",

@@ -4,6 +4,8 @@ import ContactForm from '@/components/contactForm/ContactForm'
 import Footer from '@/components/footer/Footer'
 import { getDictionary } from '@/get-dictionary'
 import { Inter } from 'next/font/google'
+import { PrimeReactProvider } from 'primereact/api';
+import "primereact/resources/themes/lara-light-cyan/theme.css";
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
@@ -34,14 +36,16 @@ export default async function RootLayout({
   }
 
   return (
-    <html lang={params.lang}>
-      <body className={inter.className}>
-        <Header />
-        {children}
-        <ContactForm dictionary={dictionary} />
-        <Footer dictionary={dictionary} />
-      </body>
-    </html>
+    <PrimeReactProvider>
+      <html lang={params.lang}>
+        <body className={inter.className}>
+          <Header />
+          {children}
+          <ContactForm dictionary={dictionary} />
+          <Footer dictionary={dictionary} />
+        </body>
+      </html>
+    </PrimeReactProvider>
   )
 }
 

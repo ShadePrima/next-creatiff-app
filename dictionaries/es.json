@@ -101,20 +101,26 @@
     "title": "Retroalimentación"
   },
   "build": {
-    "sectionOne": {
-      "titleOne": "Construcción de viviendas a partir de contenedores marítimos",
-      "paragraphOne": "Presentamos la idea de una casa modular completamente autónoma hecha a partir de contenedores marítimos.",
-      "paragraphTwo": "Después de la pandemia de COVID-19, muchas personas han considerado construir una vivienda lejos del ruido de la ciudad como una excelente opción para vivir o vacacionar.",
-      "paragraphThree": "La demanda de este tipo de viviendas, que ha ganado popularidad en Estados Unidos y Canadá, ha estado creciendo en España en los últimos años.",
-      "paragraphFour": "La elección de utilizar contenedores marítimos para la construcción de viviendas se debe a que la estructura de un contenedor marítimo es inicialmente resistente y probada, lo que permite un ensamblaje modular, superficie y transporte eficiente al lugar de instalación. Todos los módulos se fabrican en la fábrica y requieren un trabajo mínimo para la instalación. Con el diseño modular, puedes planificar la casa de tus sueños y garantizar una vida autónoma sin necesidad de servicios públicos. Nuestra vivienda no solo se puede instalar, sino que también se puede trasladar rápidamente a otro lugar, ya que los módulos se conectan mediante tornillos. La casa está bien aislada y equipada con sistemas de soporte vital. Es cómoda tanto en invierno como en verano, y el sistema de fachada ventilada de producción propia y las ventanas de alta calidad agregarán individualidad a tu vivienda.",
-      "paragraphFive_1": "Las viviendas modulares se pueden ubicar en terrenos donde es imposible construir una vivienda tradicional, así como en terrenos alquilados. Por lo general, el terreno debe ser urbano (terreno urbano), pero para ubicarlos en zonas rurales (rústicas), la decisión final será tomada por cada Comunidad Autónoma, la autoridad competente en la gestión de terrenos sin urbanizar. Todos los procedimientos para este tipo de vivienda implican gastos, que serán menores para las viviendas móviles. No se requiere un permiso de construcción, pero necesitarás cierta documentación, como una licencia urbanística, para la cual debes pagar una tarifa que oscila entre el 0,5% y el 2% de tu presupuesto de vivienda ",
-      "link_five": "cierta documentación ",
-      "paragraphFive_2": "como licencia urbanística, para la cual debes pagar una tarifa que oscila entre el 0,5% y el 2% de tu presupuesto de vivienda.",
-      "paragraphSix": "Las viviendas móviles están exentas del procedimiento de legalización de su uso (certificado de habitabilidad) con el pago de un impuesto que depende de cada Comunidad Autónoma, una licencia de primera ocupación, con la cual la administración certifica que el edificio cumple con el proyecto, con el pago del impuesto correspondiente si no deseas declarar gastos. En este caso, necesitarás obtener",
-      "link_six": "documentación equivalente a edificios inmuebles.",
-      "paragraphSeven": "Te ofrecemos no solo una vivienda, completamente amueblada y lista para una vida feliz, te ofrecemos tiempo para comunicarte y mejorar, para viajar y amar, mientras nosotros nos encargamos de TU HOGAR."
-    }
+    "title_main": "Construcción, obras y reformas integrales",
+    "text_1": "La casa de sus sueños es nuestra misión.",
+    "text_2": "Con nuestra empresa, Creatiff Star, convertimos la construcción en un arte. Con nosotros, no sólo obtendrá paredes y un tejado, sino un espacio vital completo diseñado teniendo en cuenta sus deseos y necesidades.",
+    "title_list_1": "¿Por qué elegirnos?",
+    "text_list_1_1": "Gama completa de servicios",
+    "text_list_1_2": "Enfoque individual",
+    "text_list_1_3": "Tecnologías modernas",
+    "text_list_1_4": "Transparencia y control",
+    "text_list_1_5": "Puntualidad",
+    "title_list_2": "Nuestros servicios incluyen:",
+    "text_list_2_1": "Propuestas de diseño",
+    "text_list_2_2": "Desarrollo, aprobación y apoyo del proyecto",
+    "text_list_2_3": "Una gama completa de obras de construcción desde la base hasta «llave en mano»",
+    "text_list_2_4": "Sistemas de ingeniería",
+    "text_list_2_5": "Diseño paisajístico",
+    "text_3": "Star Creatiff no se limita a construir, sino que crea la casa de sus sueños desde cero. No sólo construimos edificios, construimos confort y confianza.",
+    "text_4": "Estamos orgullosos de nuestro equipo de profesionales que son la base de nuestro éxito y de su satisfacción. Nuestro equipo es una simbiosis de experiencia, conocimientos y enfoque creativo para cada proyecto.",
+    "text_5": "No sólo nos dedicamos a la construcción de edificios residenciales, ¡también trabajamos con hoteles, restaurantes, hostales y locales industriales!"
   },
+
   "equip": {
     "title_1": "Venta de Equipos Industriales",
     "text_1": "Nuestra empresa ofrece una amplia gama de equipos industriales de alta calidad que cumplen con los más altos estándares de calidad y confiabilidad. Entendemos que el equipo eficiente es la base del éxito para cualquier negocio, por lo que trabajamos para proporcionar a nuestros clientes las mejores soluciones.",

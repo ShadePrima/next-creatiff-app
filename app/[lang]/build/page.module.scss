@@ -1,5 +1,10 @@
 @import '../../../styles/variables.module.scss';
 
+.build {
+  padding-top: 72px;
+  margin-bottom: 72px;
+}
+
 .build__image {
   margin-top: $margin-72;
   display: flex;
@@ -14,18 +19,7 @@
   max-width: 817px;
   margin: 0 auto;
 
-  .build__title {
-    margin-top: $margin-72;
-    @include title2;
-    color: $color-black;
-  }
-
-  .build__text {
-    margin-top: $margin-32;
-    @include text5;
-    color: $font-color-dark;
-  }
-
+  
   ul {
     margin-top: $margin-32;
     padding-left: 25px;
@@ -39,6 +33,19 @@
     color: $font-color-dark;
   }
 }
+
+.build__title {
+  margin-top: $margin-72;
+  @include title2;
+  color: $color-black;
+}
+
+.build__text {
+  margin-top: $margin-32;
+  @include text5;
+  color: $font-color-dark;
+}
+
 
 .build__link {
   padding-left: 4px;

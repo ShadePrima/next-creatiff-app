@@ -12,6 +12,12 @@
   max-width: 1262px;
 }
 
+.container_article {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 816px;
+}
+
 .flex-between {
   display: flex;
   justify-content: space-between;
@@ -33,6 +39,72 @@
 .link {
   color: $color-orange-light;
   border-bottom: 1px solid $color-orange-light;
+}
+
+.title_main {
+  padding-top: 32px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 125%;
+  color: #15132a;
+}
+
+.title {
+  padding-top: 32px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  color: #15132a;
+}
+
+.text_bold {
+  padding-top: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(21, 19, 42, 0.75);
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(21, 19, 42, 0.75);
+}
+
+.list_dot {
+  list-style-type: none; 
+  padding-left: 0;
+}
+
+.list_dot li {
+  position: relative;
+  margin-bottom: 0.5em;
+  padding-left: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(21, 19, 42, 0.75);
+}
+
+.list_dot li:first-child {
+  padding-top: 16px;
+}
+
+.list_dot li::before {
+  content: '•';
+  position: absolute; 
+  left: 0.5em; 
+  color: black;
+  font-weight: bold;
+}
+
+.pt_32 {
+  padding-top: 32px;
+}
+
+.pt_8 {
+  padding-top: 8px;
 }
 
 /* Reset and base styles  */
