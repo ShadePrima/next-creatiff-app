@@ -44,7 +44,7 @@
 .title_main {
   padding-top: 32px;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 20px;
   line-height: 125%;
   color: #15132a;
 }
@@ -52,7 +52,7 @@
 .title {
   padding-top: 32px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 18px;
   line-height: 125%;
   color: #15132a;
 }
@@ -67,7 +67,7 @@
 
 .text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   color: rgba(21, 19, 42, 0.75);
 }
@@ -82,7 +82,7 @@
   margin-bottom: 0.5em;
   padding-left: 30px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 150%;
   color: rgba(21, 19, 42, 0.75);
 }
@@ -106,6 +106,16 @@
 .pt_8 {
   padding-top: 8px;
 }
+
+// BreadCrumb  primereact
+.p-breadcrumb {
+  color: rgba(21, 19, 42, 0.5);
+}
+.p-menuitem-separator {
+  width: 12px;
+  margin: 0 5px;
+}
+
 
 /* Reset and base styles  */
 * {
@@ -229,4 +239,23 @@ label {
 
 legend {
   display: block;
+}
+
+
+@media (min-width: 480px) {
+  .title_main {
+    font-size: 40px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .list_dot li {
+    font-size: 16px;
+  }
 }

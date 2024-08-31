@@ -1,8 +1,8 @@
 @import '../../../styles/variables.module.scss';
 
 .build {
-  padding-top: 72px;
-  margin-bottom: 72px;
+  padding-top: 32px;
+  margin-bottom: 32px;
 }
 
 .build__image {
@@ -49,4 +49,11 @@
 
 .build__link {
   padding-left: 4px;
+}
+
+@media (min-width: 480px) {
+  .build {
+    padding-top: 72px;
+    margin-bottom: 72px;
+  }
 }

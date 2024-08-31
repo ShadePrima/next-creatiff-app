@@ -56,7 +56,7 @@ export default async function Build({ params }: BuildProps) {
         </ul>
         <div className='text pt_32'>{dictionary.build.text_3}</div>
         <div className='text pt_8'>{dictionary.build.text_4}</div>
-        <div className='text pt_8'>{dictionary.build.text_5}</div>        
+        <div className='text pt_8'>{dictionary.build.text_5}</div>
       </div>
     </section>
   )

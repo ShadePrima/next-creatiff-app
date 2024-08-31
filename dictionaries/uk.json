@@ -120,6 +120,20 @@
     "text_4": "Estamos orgullosos de nuestro equipo de profesionales que son la base de nuestro éxito y de su satisfacción. Nuestro equipo es una simbiosis de experiencia, conocimientos y enfoque creativo para cada proyecto.",
     "text_5": "No sólo nos dedicamos a la construcción de edificios residenciales, ¡también trabajamos con hoteles, restaurantes, hostales y locales industriales!"
   },
+  "equipment": {
+    "title_main": "Pintura y producción de estructuras metálicas",
+    "text_1": "Cada detalle es importante para crear un aspecto único para su hogar. No sólo ofrecemos estructuras metálicas, sino obras de arte que transformarán su espacio. Nuestros productos son una combinación de calidad, estilo e individualidad. Cree con nosotros algo especial para su hogar, jardín o restaurante.",
+    "title_list_1": "Obras de metal únicas:",
+    "text_list_1_1_slogan": " Para el hogar:",
+    "text_list_1_1": "Elegantes barandillas, vallas, puertas... cada elemento se personaliza según sus deseos.",
+    "text_list_1_2_slogan": "Para el jardín:",
+    "text_list_1_2": "Originales bancos, arcos, figuras para paisajismo, que encajarán en cualquier exterior.",
+    "text_list_1_3_slogan": "Para el solar:",
+    "text_list_1_3": "Vallas, pérgolas, elementos decorativos fiables y hermosos, diseñados para complementar y embellecer su espacio.",
+    "text_list_1_4_slogan": "Para restaurante:",
+    "text_list_1_4": "Exquisitas estructuras metálicas para interior y exterior, que enfatizarán el estilo y estatus de su establecimiento.",
+    "text_2": "La colaboración con nosotros es una garantía de que cada elemento se realizará de acuerdo con los más altos estándares de calidad y diseño. Trabajamos para que pueda hacer realidad sus ideas más atrevidas. Elija la singularidad, ¡elíjanos a nosotros!"
+  },
   "equip": {
     "title_1": "Продаж промислового обладнання",
     "text_1": "Наша компанія пропонує широкий вибір високоякісного промислового обладнання, яке відповідає найвищим стандартам якості і надійності. Ми розуміємо, що ефективне обладнання є основою успіху для будь-якого підприємства, тож ми працюємо над тим, щоб забезпечити наших клієнтів найкращими рішеннями.",
