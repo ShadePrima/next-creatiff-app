@@ -26,7 +26,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: homeGreen,
       title: dictionary.infoCard.cardOne.title,
       text: dictionary.infoCard.cardOne.text,
-      link: routes.buildCard,
+      link: routes.article_1,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
@@ -34,7 +34,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: worker,
       title: dictionary.infoCard.cardTwo.title,
       text: dictionary.infoCard.cardTwo.text,
-      link: routes.equipmentCard,
+      link: routes.article_2,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
@@ -42,7 +42,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: anvil,
       title: dictionary.infoCard.cardThree.title,
       text: dictionary.infoCard.cardThree.text,
-      link: routes.metalCard,
+      link: routes.article_3,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
@@ -50,7 +50,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: blind,
       title: dictionary.infoCard.cardFourth.title,
       text: dictionary.infoCard.cardFourth.text,
-      link: routes.equipCard,
+      link: routes.article_4,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
@@ -58,7 +58,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: industry,
       title: dictionary.infoCard.cardFifth.title,
       text: dictionary.infoCard.cardFifth.text,
-      link: routes.windowCard,
+      link: routes.article_5,
       buttonTitle: dictionary.infoCard.infoButton,
     },
     {
@@ -66,7 +66,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
       icon: radiator,
       title: dictionary.infoCard.cardSixth.title,
       text: dictionary.infoCard.cardSixth.text,
-      link: routes.generalCard,
+      link: routes.article_6,
       buttonTitle: dictionary.infoCard.infoButton,
     },
   ]

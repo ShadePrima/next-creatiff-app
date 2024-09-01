@@ -7,6 +7,7 @@ import metal_4 from '../../../assets/image/metal_4.png'
 import { Locale, i18n } from '@/i18n-config'
 import { getDictionary } from '@/get-dictionary'
 import styles from './page.module.scss'
+import { BreadCrumb } from 'primereact/breadcrumb'
 
 export const metadata = {
   title: 'Виготовлення будинків з морських контейнерів',
@@ -23,6 +24,8 @@ type BuildProps = {
 
 export default async function Metal({ params }: BuildProps) {
   const dictionary = await getDictionary(params.lang)
+  const items = [{ label: 'Article 3' }];
+  const home = { label: 'Home', url: '/' }
   if (!dictionary) {
     return (
       <section>
@@ -36,6 +39,7 @@ export default async function Metal({ params }: BuildProps) {
   return (
     <section className={styles.metal}>
       <div className='container'>
+      <BreadCrumb model={items} home={home} />
         <div className={styles.metal_image}>
           <Image src={metal} width={800} height={600} alt='build' />
         </div>
