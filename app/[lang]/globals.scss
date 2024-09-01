@@ -99,6 +99,21 @@
   font-weight: bold;
 }
 
+.list {
+  padding-left: 20px;
+}
+
+.list li {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(21, 19, 42, 0.75);
+}
+
+.pt_72 {
+  padding-top: 72px;
+}
+
 .pt_32 {
   padding-top: 32px;
 }
@@ -110,6 +125,11 @@
 .pt_8 {
   padding-top: 8px;
 }
+
+.pt_0 {
+  padding-top: 0;
+}
+
 
 // BreadCrumb  primereact
 .p-breadcrumb {
