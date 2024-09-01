@@ -22,6 +22,7 @@ import Image from 'next/image'
 import GeneralSliderColors from './general-slider-colors'
 import GeneralSliderPorchOne from './general-slider-porch-1'
 import GeneralSliderPorchTwo from './general-slider-porch-2'
+import { BreadCrumb } from 'primereact/breadcrumb'
 
 export const metadata = {
   title: 'Загальнобудівельні види робіт',
@@ -37,6 +38,8 @@ type EquipmentProps = {
 }
 
 export default async function General({ params }: EquipmentProps) {
+  const items = [{ label: 'Article 4' }];
+  const home = { label: 'Home', url: '/' }
   const dictionary = await getDictionary(params.lang)
   if (!dictionary) {
     return (
@@ -50,6 +53,7 @@ export default async function General({ params }: EquipmentProps) {
   return (
     <section className={styles.general}>
         <div className={styles.general__wrapper}>
+          <BreadCrumb model={items} home={home} />
           <h1 className={styles.general__title}>{dictionary.general.general_title}</h1>
           <p className={styles.general__text}>{dictionary.general.general_text_1}</p>
           <h2 className={styles.general__text}>{dictionary.general.general_list_title}</h2>
@@ -133,7 +137,7 @@ export default async function General({ params }: EquipmentProps) {
         
         <h2 className={styles.general__title}>{dictionary.general.home_title}</h2>
         <p className={styles.general__text} >{dictionary.general.home_text_1}</p>
-        <div className={styles.general__window_wrapper}>
+        {/* <div className={styles.general__window_wrapper}>
             <div className={styles.general__window_img_wrapper}>
               <Image src={window3} width={295} height={295} alt='window one' />
               <p className={cl(styles.general__text, styles.home__text_image)} style={{textAlign: "center"}}>Fenster 500</p>
@@ -150,7 +154,7 @@ export default async function General({ params }: EquipmentProps) {
               <li className={styles.general_home_list_item}>{dictionary.general.home_list_9}</li>
               <li className={styles.general_home_list_item}>{dictionary.general.home_list_10}</li>
             </ol>
-          </div>
+          </div> */}
             <p className={styles.general__text} >{dictionary.general.home_text_2}</p>
         </div>
     </section>

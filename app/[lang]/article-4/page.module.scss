@@ -1,6 +1,7 @@
 @import '../../../styles/variables.module.scss';
 
 .general__wrapper {
+  padding-top: 72px!important;
   max-width: 817px;
   width: 100%;
   margin: 0 auto;
@@ -136,7 +137,6 @@
     }
 
     .general__title {
-      padding-top: $margin-72;
       font-size: 40px;
     }
 
