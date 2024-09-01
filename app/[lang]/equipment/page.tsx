@@ -10,6 +10,9 @@ import image_4 from '@/assets/image/equipment/epuipment-4.png'
 import image_5 from '@/assets/image/equipment/epuipment-5.png'
 import image_6 from '@/assets/image/equipment/epuipment-6.png'
 import image_7 from '@/assets/image/equipment/epuipment-7.png'
+import image_2_1 from '@/assets/image/equipment/equipment-2-1.png'
+import image_2_2 from '@/assets/image/equipment/equipment-2-2.png'
+import image_2_3 from '@/assets/image/equipment/equipment-2-3.png'
 
 export const metadata = {
   title: 'Продаж промислового обладнання',
@@ -62,6 +65,11 @@ export default async function Equipment({ params }: Props) {
             <Image src={image_7} alt="Image 7" />
         </div>
         <div className='text pt_32'>{dict.equipment.text_2}</div>
+        <div className={styles.equipment__photo_2_grid}>
+            <Image src={image_2_1} alt="Image 1" />
+            <Image src={image_2_2} alt="Image 2" />
+            <Image src={image_2_3} alt="Image 3" />
+        </div>
       </div>
     </div>
   )
