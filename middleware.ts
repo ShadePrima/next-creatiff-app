@@ -29,7 +29,7 @@ export function middleware(request: NextRequest) {
 
   // Skip middleware for admin routes
   if (pathname.startsWith('/admin')) {
-    const newPath = pathname.substring(1); 
+    const newPath = pathname.substring(1);
 
     return NextResponse.redirect(
       new URL(
@@ -66,3 +66,4 @@ export function middleware(request: NextRequest) {
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
 }
+

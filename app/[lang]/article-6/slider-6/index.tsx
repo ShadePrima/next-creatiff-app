@@ -1,9 +1,9 @@
 'use client'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import image_1 from '@/assets/image/article-6/article-1.png'
-import image_2 from '@/assets/image/article-6/article-2.png'
-import image_3 from '@/assets/image/article-6/article-3.png'
+import image_1 from '@/assets/image/article-6/slider-1.png'
+import image_2 from '@/assets/image/article-6/slider-2.png'
+import image_3 from '@/assets/image/article-6/slider-3.png'
 import Image from "next/image"
 
 export default function Slider_6() {
