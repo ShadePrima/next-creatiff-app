@@ -13,7 +13,6 @@ import image_grid_5 from '@/assets/image/article-6/article-grid-5.png'
 import Link from 'next/link'
 import Slider_6 from './slider-6'
 
-
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({ lang: locale }))
 }  
