@@ -4,14 +4,15 @@ import { getDictionary } from '@/get-dictionary'
 import { BreadCrumb } from 'primereact/breadcrumb'
 import styles from './page.module.scss'
 import Image from 'next/image'
-import image_4 from '@/assets/image/article-6/article-4.png'
-import image_grid_1 from '@/assets/image/article-6/article-grid-1.png'
-import image_grid_2 from '@/assets/image/article-6/article-grid-2.png'
-import image_grid_3 from '@/assets/image/article-6/article-grid-3.png'
-import image_grid_4 from '@/assets/image/article-6/article-grid-4.png'
-import image_grid_5 from '@/assets/image/article-6/article-grid-5.png'
+import image_1 from '@/assets/image/article-6/image-11.png'
+import image_2 from '@/assets/image/article-6/image-12.png'
+import image_3 from '@/assets/image/article-6/image-13.png'
+import image_4 from '@/assets/image/article-6/image-14.png'
+import image_5 from '@/assets/image/article-6/image-15.png'
+import image_6 from '@/assets/image/article-6/article-4.png'
 import Link from 'next/link'
 import Slider_6 from './slider-6'
+import cl from "clsx";
 
 export async function generateStaticParams() {
     return i18n.locales.map((locale) => ({ lang: locale }))
@@ -48,7 +49,7 @@ export default async function Article_6({ params }: Props) {
                 <div className='title_main'>{dict.article_6.title_main}</div>
                 <div className={styles.article_6__wrapper}>
                     <div className={styles.article_6__image_block}>
-                        <Image src={image_4} alt='image 3' />
+                        <Image src={image_6} alt='image 3' />
                         <div className='text'>{dict.article_6.text_1_5}</div>
                     </div>
                     <div className={styles.article_6__text_block}>
@@ -66,12 +67,14 @@ export default async function Article_6({ params }: Props) {
                     <li><span className='text_bold'>{dict.article_6.text_list_1_3_slogan}</span>{' '}{dict.article_6.text_list_1_3}</li>
                     <li><span className='text_bold'>{dict.article_6.text_list_1_4_slogan}</span>{' '}{dict.article_6.text_list_1_4}</li>
                 </ul>
-                <div className={styles.article_6__photo_grid}>
-                    <Image src={image_grid_1} alt="Image 1" />
-                    <Image src={image_grid_2} alt="Image 2" />
-                    <Image src={image_grid_3} alt="Image 3" />
-                    <Image src={image_grid_4} alt="Image 4" />
-                    <Image src={image_grid_5} alt="Image 5" />
+                <div className={cl(styles.article_6__photo_table, 'pt_32')}>
+                    <Image src={image_1} alt="Image 1" />
+                    <Image src={image_2} alt="Image 2" />
+                    <Image src={image_3} alt="Image 3" />
+                </div>
+                <div className={cl(styles.article_6__photo_table, 'pt_16')}>
+                    <Image src={image_4} alt="Image 4" />
+                    <Image src={image_5} alt="Image 5" />
                 </div>
                 <div className='title'>{dict.article_6.title_list_2}</div>
                 <ul className='list_dot'>

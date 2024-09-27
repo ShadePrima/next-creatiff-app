@@ -42,7 +42,6 @@ export function middleware(request: NextRequest) {
   // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request)
-    console.log("locale", locale)
     // e.g. incoming request is /products
     // The new URL is now /en-US/products
     return NextResponse.redirect(
