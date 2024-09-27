@@ -10,6 +10,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 import Image from 'next/image'
 import styles from './LocaleSwitcherCustom.module.scss'
+import {setCookie} from "cookies-next";
 
 const selectedList = [
   {
@@ -43,6 +44,12 @@ export default function LocaleSwitcherCustom() {
   const pathName = usePathname()
 
   React.useEffect(() => {
+    if (language) {
+    setCookie('NEXT_LOCALE', language)
+    }
+  }, [language])
+
+  React.useEffect(() => {
     // Set the initial language state based on the current language in the URL
     const segments = pathName.split('/')
     if (segments.length > 1) {
@@ -62,6 +69,7 @@ export default function LocaleSwitcherCustom() {
   //   localStorage.setItem('selectedLanguage', selectedLanguage)
   // }
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const redirectedPathName = () => {
     if (!pathName) return '/'
     const segments = pathName.split('/')
@@ -77,7 +85,7 @@ export default function LocaleSwitcherCustom() {
     if (language) {
       router.push(redirectedPathName())
     }
-  }, [language])
+  }, [language, redirectedPathName, router])
 
   React.useEffect(() => {
     // Set the initial language state based on the current language in the URL

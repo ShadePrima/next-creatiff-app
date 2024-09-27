@@ -1,27 +1,18 @@
-import { NextResponse } from 'next/server'
-import type { NextRequest } from 'next/server'
+import type {NextRequest} from 'next/server'
+import {NextResponse} from 'next/server'
 
-import { i18n } from './i18n-config'
+import {i18n} from './i18n-config'
 
-import { match as matchLocale } from '@formatjs/intl-localematcher'
-import Negotiator from 'negotiator'
-
-function getLocale(request: NextRequest): string | undefined {
-  // Negotiator expects plain object so we need to transform headers
-  const negotiatorHeaders: Record<string, string> = {}
-  request.headers.forEach((value, key) => (negotiatorHeaders[key] = value))
-
-  // @ts-ignore locales are readonly
+function getLocale(request: NextRequest): string {
+  // @ts-ignore
   const locales: string[] = i18n.locales
+  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value
+  console.log("cookieLocale", cookieLocale)
 
-  // Use negotiator and intl-localematcher to get best locale
-  let languages = new Negotiator({ headers: negotiatorHeaders }).languages(
-    locales
-  )
-
-  const locale = matchLocale(languages, locales, i18n.defaultLocale)
-
-  return locale
+  if (cookieLocale && locales.includes(cookieLocale)) {
+    return cookieLocale
+  }
+  return 'es'
 }
 
 export function middleware(request: NextRequest) {
