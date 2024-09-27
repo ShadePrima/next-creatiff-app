@@ -1,7 +1,7 @@
 'use client'
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
-import image_1 from '@/public/image/article-6/slide-1.png'
+import image_1 from '@/public/image/article-6/slide.png'
 import image_2 from '@/public/image/article-6/slide-2.png'
 import image_3 from '@/public/image/article-6/slide-3.png'
 
@@ -19,11 +19,11 @@ export default function Slider_6() {
       })
 
     return (
-    <div style={{paddingTop: '32px'}} ref={sliderRef} className="keen-slider">
-        <div className="keen-slider__slide number-slide1"><Image src={image_1} alt='image 1' /></div>
-        <div className="keen-slider__slide number-slide2"><Image src={image_2} alt='image 2' /></div>
-        <div className="keen-slider__slide number-slide3"><Image src={image_3} alt='image 3' /></div>
-    </div>
+        <div style={{paddingTop: '32px'}} ref={sliderRef} className="keen-slider">
+            <div className="keen-slider__slide number-slide1"><Image src={image_1} alt='image 1'/></div>
+            <div className="keen-slider__slide number-slide2"><Image src={image_2} alt='image 2'/></div>
+            <div className="keen-slider__slide number-slide3"><Image src={image_3} alt='image 3'/></div>
+        </div>
     )
 
 }
