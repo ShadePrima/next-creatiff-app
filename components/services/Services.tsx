@@ -15,7 +15,7 @@ export default function Services({ dictionary }: ServicesProps) {
   }
   return (
     <section className={styles.root}>
-      <Image src={image} alt='Kitchen' width={465} height={674} />
+      <Image className={styles.image} src={image} alt='Kitchen' />
       <div className={styles.content}>
         <h1 className={styles.title}>{dictionary.services.title}</h1>
         <p className={styles.text}>

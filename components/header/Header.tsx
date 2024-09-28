@@ -20,7 +20,7 @@ export default function Header() {
                 width={104}
                 height={104}
               />
-              <h1 className={styles.logoText}>Creatiff - realizamos ideas</h1>
+              <h1 className={styles.logoText}>Star creatiff - realizamos ideas</h1>
             </div>
           </Link>
 

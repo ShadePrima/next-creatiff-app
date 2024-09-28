@@ -1,7 +1,5 @@
 'use client'
-
 import React from 'react'
-
 import Image from 'next/image'
 import image1 from '../../assets/image/header1.png'
 import image2 from '../../assets/image/header2.png'
@@ -21,14 +19,5 @@ export default function ChangeImage() {
   }, [index])
 
   const currentImage = images[index]
-
-  return (
-    <Image
-      className={styles.image}
-      src={currentImage}
-      alt='build'
-      width={520}
-      height={670}
-    />
-  )
+  return <Image className={styles.image} src={currentImage} alt='build' />
 }

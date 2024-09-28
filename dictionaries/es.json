@@ -89,13 +89,13 @@
   },
   "contactForm": {
     "title": "¿Alguna pregunta? ESCRÍBENOS ",
-    "name": "Tu Imme",
+    "name": "Tu nombre",
     "namePlaceholder": "Introduzca su nombre",
-    "email": "Tu Correo",
+    "email": "Tu correo",
     "tel": "Tu teléfono",
     "leter": "Tu carta",
     "leterPlaceholder": "Describa su pregunta aquí...",
-    "button": "Enviar una carta"
+    "button": "ENVIAR"
   },
   "footer": {
     "title": "Retroalimentación"
@@ -120,7 +120,7 @@
     "text_4": "Estamos orgullosos de nuestro equipo de profesionales que son la base de nuestro éxito y de su satisfacción. Nuestro equipo es una simbiosis de experiencia, conocimientos y enfoque creativo para cada proyecto.",
     "text_5": "No sólo nos dedicamos a la construcción de edificios residenciales, ¡también trabajamos con hoteles, restaurantes, hostales y locales industriales!"
   },
-  "equipment": {
+  "article_2": {
     "title_main": "Pintura y producción de estructuras metálicas",
     "text_1": "Cada detalle es importante para crear un aspecto único para su hogar. No sólo ofrecemos estructuras metálicas, sino obras de arte que transformarán su espacio. Nuestros productos son una combinación de calidad, estilo e individualidad. Cree con nosotros algo especial para su hogar, jardín o restaurante.",
     "title_list_1": "Obras de metal únicas:",

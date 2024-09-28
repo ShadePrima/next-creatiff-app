@@ -46,21 +46,21 @@ export default async function Equipment({ params }: Props) {
     <div className={styles.equipment}>
         <div className='container_article'>
             <BreadCrumb model={items} home={home}/>
-            <div className='title_main'>{dict.equipment.title_main}</div>
-            <div className='text pt_32'>{dict.equipment.text_1}</div>
-            <div className='title'>{dict.equipment.title_list_1}</div>
+            <div className='title_main'>{dict.article_2.title_main}</div>
+            <div className='text pt_32'>{dict.article_2.text_1}</div>
+            <div className='title'>{dict.article_2.title_list_1}</div>
             <ul className='list_dot'>
                 <li><span
-                    className='text_bold'>{dict.equipment.text_list_1_1_slogan}</span>{' '}{dict.equipment.text_list_1_1}
+                    className='text_bold'>{dict.article_2.text_list_1_1_slogan}</span>{' '}{dict.article_2.text_list_1_1}
                 </li>
                 <li><span
-                    className='text_bold'>{dict.equipment.text_list_1_2_slogan}</span>{' '}{dict.equipment.text_list_1_2}
+                    className='text_bold'>{dict.article_2.text_list_1_2_slogan}</span>{' '}{dict.article_2.text_list_1_2}
                 </li>
                 <li><span
-                    className='text_bold'>{dict.equipment.text_list_1_3_slogan}</span>{' '}{dict.equipment.text_list_1_3}
+                    className='text_bold'>{dict.article_2.text_list_1_3_slogan}</span>{' '}{dict.article_2.text_list_1_3}
                 </li>
                 <li><span
-                    className='text_bold'>{dict.equipment.text_list_1_4_slogan}</span>{' '}{dict.equipment.text_list_1_4}
+                    className='text_bold'>{dict.article_2.text_list_1_4_slogan}</span>{' '}{dict.article_2.text_list_1_4}
                 </li>
             </ul>
             <div className={cl(styles.equipment__photo_one, 'pt_32')}>
@@ -73,7 +73,7 @@ export default async function Equipment({ params }: Props) {
                 <Image src={image_5} alt="Image 5"/>
                 <Image src={image_6} alt="Image 6"/>
             </div>
-            <div className='text pt_32'>{dict.equipment.text_2}</div>
+            <div className='text pt_32'>{dict.article_2.text_2}</div>
             <div className={styles.equipment__photo_2_grid}>
                 <Image src={image_2_1} alt="Image 1"/>
                 <Image src={image_2_2} alt="Image 2"/>

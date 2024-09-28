@@ -32,11 +32,11 @@ export default async function Home({ params: { lang } }: Props) {
       <div className='container'>
         <InfoCardBlock dictionary={dictionary} lang={lang} />
         {/* <Partners dictionary={dictionary} /> */}
-        <Services dictionary={dictionary} />
+        {/*<Services dictionary={dictionary} />*/}
       </div>
       <ContactBlock dictionary={dictionary} />
       <div className='container'>
-        <Gallery dictionary={dictionary} />
+        {/*<Gallery dictionary={dictionary} />*/}
         <Furniture dictionary={dictionary} />
       </div>
     </main>

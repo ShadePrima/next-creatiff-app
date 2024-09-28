@@ -2,9 +2,8 @@
 
 .root {
   margin-top: $margin-72;
-
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: start;
   gap: 55px;
   flex-wrap: wrap;
@@ -12,6 +11,11 @@
   @media (max-width: 850px) {
     justify-content: center;
   }
+}
+
+.image {
+  width: 465px;
+  height: 674px;
 }
 
 .content {
