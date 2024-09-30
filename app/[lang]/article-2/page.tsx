@@ -29,8 +29,8 @@ type Props = {
 
 export default async function Equipment({ params }: Props) {
   const dict = await getDictionary(params.lang)
-  const items = [{ label: 'Article 2' }];
-  const home = { label: 'Home', url: '/' }
+  const items = [{ label: dict?.article_2.article }];
+  const home = { label: dict?.article_2.home, url: '/' }
 
   if (!dict) {
     return (

@@ -38,9 +38,10 @@ type EquipmentProps = {
 }
 
 export default async function General({ params }: EquipmentProps) {
-  const items = [{ label: 'Article 4' }];
-  const home = { label: 'Home', url: '/' }
   const dictionary = await getDictionary(params.lang)
+  const items = [{ label: dictionary?.general.article }];
+  const home = { label: dictionary?.general.home, url: '/' }
+
   if (!dictionary) {
     return (
       <section>

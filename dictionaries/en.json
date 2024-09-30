@@ -118,7 +118,9 @@
     "text_list_2_5": "Landscape design",
     "text_3": "Star Creatiff doesn’t just build; we create your dream home from scratch. We don't just construct buildings; we build comfort and trust.",
     "text_4": "We are proud of our team of professionals who form the foundation of our success and your satisfaction. Our team combines experience, knowledge, and a creative approach to every project.",
-    "text_5": "We not only engage in residential construction but also work with hotels, restaurants, hostels, and industrial spaces!"
+    "text_5": "We not only engage in residential construction but also work with hotels, restaurants, hostels, and industrial spaces!",
+    "home": "Home",
+    "article": "Article 1"
   },
   "article_2": {
     "title_main": "Painting and production of metal structures",
@@ -132,7 +134,9 @@
     "text_list_1_3": "Reliable and beautiful fences, pergolas, and decorative elements designed to complement and beautify your space.",
     "text_list_1_4_slogan": "For the restaurant:",
     "text_list_1_4": "Exquisite metal structures for both interior and exterior that emphasize the style and status of your establishment.",
-    "text_2": "Collaboration with us guarantees that every element will be executed according to the highest standards of quality and design. We work so that you can bring your boldest ideas to life. Choose uniqueness, choose us!"
+    "text_2": "Collaboration with us guarantees that every element will be executed according to the highest standards of quality and design. We work so that you can bring your boldest ideas to life. Choose uniqueness, choose us!",
+    "home": "Home",
+    "article": "Article 2"
   },
   "article_3": {
     "title_main": "Prefabricated Houses",
@@ -170,21 +174,9 @@
     "text_list_4_2": "You get a house that does not require connection to utilities and helps you save on bills.",
     "text_list_4_3": "You get a house that provides comfort and safety in any season.",
     "text_list_4_4": "You get a house that reflects your individuality and style.",
-    "text_12": "We not only offer a fully furnished house ready for happy living, but we also offer free time, which you can spend on communication, travel, and love, while we take care of your home."
-  },
-  "metal": {
-    "metal_title": "Metal Construction Manufacturing",
-    "metal_text_1": "We understand that metal constructions are an integral part of many projects, and we are ready to bring your ideas to life.",
-    "metal_text_2": "Our manufacturing is equipped with modern technologies and qualified personnel, allowing us to create metal constructions of any complexity and size. We specialize in individual approaches to each client, regardless of the scope of work.",
-    "metal_list_text": "We produce the following types of metal constructions:",
-    "metal_list_1": "fences",
-    "metal_list_2": "gates",
-    "metal_list_3": "grilles",
-    "metal_list_4": "canopies",
-    "metal_list_5": "decorative items",
-    "metal_text_3": "We can also create any metal construction according to your preferences by sending us photos from Pinterest.",
-    "metal_title_2": "In-House Powder Coating Chamber",
-    "metal_text_4": "We also have our own powder coating chamber that helps us bring your ideas to life."
+    "text_12": "We not only offer a fully furnished house ready for happy living, but we also offer free time, which you can spend on communication, travel, and love, while we take care of your home.",
+    "home": "Home",
+    "article": "Article 3"
   },
   "general": {
     "general_title": "Windows and Doors",
@@ -237,7 +229,9 @@
     "home_list_8": "Option to choose an aluminum threshold: cold (20 mm) or warm (55 mm)",
     "home_list_9": "Standard laminate colors: golden oak, dark oak, walnut, and anthracite",
     "home_list_10": "5-year warranty",
-    "home_text_2": "Choosing our company guarantees not only the highest quality products but also fast delivery. We value your time and provide quick and safe delivery. Additionally, we handle all the installation, offering you a hassle-free experience from start to finish. And, of course, our ten-year product warranty confirms our commitment to long-term quality and your trust. Choose our company and let quality enter your life."
+    "home_text_2": "Choosing our company guarantees not only the highest quality products but also fast delivery. We value your time and provide quick and safe delivery. Additionally, we handle all the installation, offering you a hassle-free experience from start to finish. And, of course, our ten-year product warranty confirms our commitment to long-term quality and your trust. Choose our company and let quality enter your life.",
+    "home": "Home",
+    "article": "Article 4"
   },
   "article_5": {
     "title_main": "Various Home Products",
@@ -281,7 +275,9 @@
     "text_list_11_1": "The 375 panel is part of the modular HYBRID heating system. Depending on the size of the room, you can install one or more panels at a rate of 1 panel per 5-7 m2 of area. By using the required number of ceramic panels, you can easily heat rooms of any size.",
     "text_list_11_2": "Panels are also used for additional heating. The most popular placement combination is horizontal (in pairs), and the upper panel supports an additional decorative load in vertical placement.",
     "text_11_4": "HYBRID 375 white/black",
-    "text_11_5": "Other sizes are available: HYBRID 420 white/black, HYBRID 550 white/black."
+    "text_11_5": "Other sizes are available: HYBRID 420 white/black, HYBRID 550 white/black.",
+    "home": "Home",
+    "article": "Article 5"
   },
   "article_6": {
     "title_main": "A Wide Range of Furniture",
@@ -314,6 +310,8 @@
     "text_list_2_5_slogan": "A Warranty You Can Trust:",
     "text_list_2_5": "we care about you and your comfort by guaranteeing all our products.",
     "text_2": "Don’t miss the opportunity to transform your home with Black Red White furniture. Follow the link and choose what you want.",
-    "text_3": "Our official store is opening soon in Alicante, Plaza Galicia 2."
+    "text_3": "Our official store is opening soon in Alicante, Plaza Galicia 2.",
+    "home": "Home",
+    "article": "Article 6"
   }
 }

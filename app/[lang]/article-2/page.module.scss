@@ -10,6 +10,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+  flex-wrap: wrap;
 }
 
 .equipment__photo_2_grid {
@@ -45,5 +46,9 @@
   .equipment {
     padding-top: 72px;
     margin-bottom: 72px;
+  }
+
+  .equipment__photo_one {
+    flex-wrap: nowrap;
   }
 }

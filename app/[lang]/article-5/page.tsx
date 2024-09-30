@@ -31,8 +31,8 @@ type BuildProps = {
 
 export default async function Metal({ params }: BuildProps) {
   const dict = await getDictionary(params.lang)
-  const items = [{ label: 'Article 5' }];
-  const home = { label: 'Home', url: '/' }
+  const items = [{ label: dict?.article_5.article }];
+  const home = { label: dict?.article_5.home, url: '/' }
   if (!dict) {
     return (
       <section>

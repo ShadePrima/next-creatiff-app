@@ -29,8 +29,8 @@ type BuildProps = {
 
 export default async function Equip({ params }: BuildProps) {
   const dict = await getDictionary(params.lang)
-  const items = [{ label: 'Article 3' }];
-  const home = { label: 'Home', url: '/' }
+  const items = [{ label: dict?.article_3.article }];
+  const home = { label: dict?.article_3.home, url: '/' }
 
   if (!dict) {
     return (

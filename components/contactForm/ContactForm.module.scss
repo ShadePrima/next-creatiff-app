@@ -3,6 +3,7 @@
 .root {
   margin-top: $margin-72;
   background: $background-contact;
+  padding: 0 40px;
 }
 
 .wrapper {
@@ -63,4 +64,10 @@
   margin: 32px auto 0;
   max-width: 351px;
   width: 100%;
+}
+
+@media (min-width: 480px) {
+  .root {
+    padding: 0;
+  }
 }
