@@ -1,7 +1,7 @@
 @import '../../styles/variables.module.scss';
 
 .root {
-  max-width: 330px;
+  width: 100%;
   min-height: 94px;
 }
 
@@ -16,7 +16,7 @@
 
 .input {
   margin-top: 8px;
-  max-width: 330px;
+  width: 100%;
   min-height: 56px;
   padding: 13px 16px;
 

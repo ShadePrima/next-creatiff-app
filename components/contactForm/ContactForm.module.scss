@@ -3,7 +3,6 @@
 .root {
   margin-top: $margin-72;
   background: $background-contact;
-  padding: 0 40px;
 }
 
 .wrapper {
@@ -20,7 +19,6 @@
 
 .inputBlock {
   margin-top: $margin-32;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,5 +67,9 @@
 @media (min-width: 480px) {
   .root {
     padding: 0;
+  }
+
+  .inputBlock {
+    flex-wrap: nowrap;
   }
 }
