@@ -4,7 +4,7 @@ import { NextResponse } from 'next/server';
 import { i18n } from './i18n-config';
 
 function getLocale(request: NextRequest): string {
-  const locales: string[] = i18n.locales;
+  const locales = i18n.locales;
   const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
   console.log('cookieLocale', cookieLocale);
 
