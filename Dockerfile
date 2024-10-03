@@ -1,10 +1,20 @@
-FROM node:14 AS build
-WORKDIR /app
-COPY . .
-RUN npm install && npm run build
+# Build Stage
+FROM node:18.17-alpine AS build
 
-FROM nginx:alpine
-COPY --from=build /app/build /usr/share/nginx/html
+WORKDIR /app
+
+COPY package*.json ./
+
+RUN npm ci
+
+COPY . .
+
+RUN npm run build
+
+
+FROM nginx:stable-alpine
+
+COPY --from=build /app/out /usr/share/nginx/html
 
 EXPOSE 80
 
