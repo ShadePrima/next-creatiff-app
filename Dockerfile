@@ -9,9 +9,10 @@ RUN npm ci
 
 COPY . .
 
-RUN npm run build
+# Run both build and export
+RUN npm run build-export
 
-
+# Production Stage
 FROM nginx:stable-alpine
 
 COPY --from=build /app/out /usr/share/nginx/html
