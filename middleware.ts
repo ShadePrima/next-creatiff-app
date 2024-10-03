@@ -1,51 +1,59 @@
-import type { NextRequest } from 'next/server';
-import { NextResponse } from 'next/server';
+import type {NextRequest} from 'next/server'
+import {NextResponse} from 'next/server'
 
-import { i18n } from './i18n-config';
+import {i18n} from './i18n-config'
 
 function getLocale(request: NextRequest): string {
-  const locales = i18n.locales;
-  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value;
-  console.log('cookieLocale', cookieLocale);
+  // @ts-ignore
+  const locales: string[] = i18n.locales
+  const cookieLocale = request.cookies.get('NEXT_LOCALE')?.value
+  console.log("cookieLocale", cookieLocale)
 
   if (cookieLocale && locales.includes(cookieLocale)) {
-    return cookieLocale;
+    return cookieLocale
   }
-  return 'es';
+  return 'es'
 }
 
 export function middleware(request: NextRequest) {
-  const pathname = request.nextUrl.pathname;
+  const pathname = request.nextUrl.pathname
 
-  if (
-    pathname.startsWith('/_next/') ||
-    pathname.startsWith('/api/') ||
-    pathname === '/favicon.ico' ||
-    pathname === '/robots.txt' ||
-    pathname === '/sitemap.xml' ||
-    /\.(.*)$/.test(pathname)
-  ) {
-    return NextResponse.next();
+  // Skip middleware for admin routes
+  if (pathname.startsWith('/admin')) {
+    const newPath = pathname.substring(1);
+
+    return NextResponse.redirect(
+      new URL(
+        `/${newPath}`,
+        request.url
+      )
+    )
   }
 
   if (pathname.startsWith('/admin')) {
-    return NextResponse.next();
+    return NextResponse.rewrite(new URL('/about-2', request.url));
   }
 
-  const isLocalized = i18n.locales.some(
-    (locale) => pathname === `/${locale}` || pathname.startsWith(`/${locale}/`)
-  );
+  // Check if there is any supported locale in the pathname
+  const pathnameIsMissingLocale = i18n.locales.every(
+    (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
+  )
 
-  if (!isLocalized) {
-    const locale = getLocale(request);
+  // Redirect if there is no locale
+  if (pathnameIsMissingLocale) {
+    const locale = getLocale(request)
+
+    // e.g. incoming request is /products
+    // The new URL is now /en-US/products
     return NextResponse.redirect(
-      new URL(`/${locale}${pathname}`, request.url)
-    );
+      new URL(
+        `/${locale}${pathname.startsWith('/') ? '' : '/'}${pathname}`,
+        request.url
+      )
+    )
   }
-
-  return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/((?!api/|_next/).*)'],
-};
+  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+}
