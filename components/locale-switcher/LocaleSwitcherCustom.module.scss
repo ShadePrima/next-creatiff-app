@@ -39,23 +39,17 @@
   top: 40px;
   left: -143px;
   z-index: 10;
-
   padding: 24px 96px 24px 24px;
-
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 16px;
-
   width: 256px;
   height: 170px;
   opacity: 0;
-  background-color: white;
-
   border-radius: 8px;
   border: 1.5px solid rgba(0, 0, 0, 0.13);
   background: #fff;
-
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -65,7 +59,7 @@
 
 .selectItem {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   gap: 12px;
   cursor: pointer;
