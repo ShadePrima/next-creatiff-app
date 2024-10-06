@@ -54,7 +54,7 @@ export default async function Article_6({ params }: Props) {
                     </div>
                     <div className={styles.article_6__text_block}>
                         <div className='text_bold pt_0'>{dict.article_6.title_1}</div>
-                        {/*<div className='text pt_8'>{dict.article_6.text_1_1}</div>*/}
+                        <div className='text pt_8'>{dict.article_6.text_1_1}</div>
                         <div className='text pt_8'>{dict.article_6.text_1_2}</div>
                         <div className='text pt_8'>{dict.article_6.text_1_3}</div>
                         <div className='text pt_8'>{dict.article_6.text_1_4}</div>
@@ -62,10 +62,21 @@ export default async function Article_6({ params }: Props) {
                 </div>
                 <div className='title'>{dict.article_6.title_list_1}</div>
                 <ul className='list_dot'>
-                    <li><span className='text_bold'>{dict.article_6.text_list_1_1_slogan}</span>{' '}{dict.article_6.text_list_1_1}</li>
-                    <li><span className='text_bold'>{dict.article_6.text_list_1_2_slogan}</span>{' '}{dict.article_6.text_list_1_2}</li>
-                    <li><span className='text_bold'>{dict.article_6.text_list_1_3_slogan}</span>{' '}{dict.article_6.text_list_1_3}</li>
-                    <li><span className='text_bold'>{dict.article_6.text_list_1_4_slogan}</span>{' '}{dict.article_6.text_list_1_4}</li>
+                    <li><span
+                        className='text_bold'>{dict.article_6.text_list_1_1_slogan}</span>{' '}{dict.article_6.text_list_1_1}
+                    </li>
+                    <li><span
+                        className='text_bold'>{dict.article_6.text_list_1_2_slogan}</span>{' '}{dict.article_6.text_list_1_2}
+                    </li>
+                    <li><span
+                        className='text_bold'>{dict.article_6.text_list_1_3_slogan}</span>{' '}{dict.article_6.text_list_1_3}
+                    </li>
+                    <li><span
+                        className='text_bold'>{dict.article_6.text_list_1_4_slogan}</span>{' '}{dict.article_6.text_list_1_4}
+                    </li>
+                    <li><span
+                        className='text_bold'>{dict.article_6.text_list_1_5_slogan}</span>{' '}{dict.article_6.text_list_1_5}
+                    </li>
                 </ul>
                 <div className={cl(styles.article_6__photo_table, 'pt_32')}>
                     <Image src={image_1} alt="Image 1" />
@@ -85,7 +96,7 @@ export default async function Article_6({ params }: Props) {
                     <li><span className='text_bold'>{dict.article_6.text_list_2_5_slogan}</span>{' '}{dict.article_6.text_list_2_5}</li>
                 </ul>
                 <div className='text'>{dict.article_6.text_2}</div>
-                <Link className={styles.article_6__link} href={'https://www.brw.pl/'} target='_blank'>https://www.brw.pl/</Link>
+                {/*<Link className={styles.article_6__link} href={'https://www.brw.pl/'} target='_blank'>https://www.brw.pl/</Link>*/}
                 <div className='text pt_32'>{dict.article_6.text_3}</div>
             </div>
         </div>
