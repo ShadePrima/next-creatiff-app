@@ -23,7 +23,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
   const infoCardList = [
     {
       id: 1,
-      icon: homeGreen,
+      icon: anvil,
       title: dictionary.infoCard.cardOne.title,
       text: dictionary.infoCard.cardOne.text,
       link: routes.article_1,
@@ -39,7 +39,7 @@ export default function InfoCardBlock({ dictionary }: Props) {
     },
     {
       id: 3,
-      icon: anvil,
+      icon: homeGreen,
       title: dictionary.infoCard.cardThree.title,
       text: dictionary.infoCard.cardThree.text,
       link: routes.article_3,
