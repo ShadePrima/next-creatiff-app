@@ -54,7 +54,7 @@ export default async function Article_6({ params }: Props) {
                     </div>
                     <div className={styles.article_6__text_block}>
                         <div className='text_bold pt_0'>{dict.article_6.title_1}</div>
-                        <div className='text pt_8'>{dict.article_6.text_1_1}</div>
+                        {/*<div className='text pt_8'>{dict.article_6.text_1_1}</div>*/}
                         <div className='text pt_8'>{dict.article_6.text_1_2}</div>
                         <div className='text pt_8'>{dict.article_6.text_1_3}</div>
                         <div className='text pt_8'>{dict.article_6.text_1_4}</div>
